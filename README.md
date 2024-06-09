@@ -64,7 +64,7 @@ Replace the parameters with the necessary credentials. This action opens the Tal
 ### Card Tokenization
 The Tally SDK offers a secure way to handle card information through tokenization. This process converts sensitive card details into a secure token, minimizing the risk of exposing actual card information.
 
-- **Storing and Encrypting Card Data**: The SDK takes care of encrypting card information and storing it securely, leveraging Android's cryptographic storage solutions. You don't need to manage the complexities of encryption. To learn more about Android Keystore system visit [https://developer.android.com/privacy-and-security/keystore]
+- **Storing and Encrypting Card Data**: The SDK takes care of encrypting card information and storing it securely, leveraging Keychain. You don't need to manage the complexities of saving to the Keychain. The SDK makes use of Valet to achieve this To learn more about Valet visit [https://github.com/square/Valet] to lean more about Keychain visit [https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain]
   
 - **Reading Encrypted Data**: To access the stored and encrypted card information, use:
   ```kotlin
