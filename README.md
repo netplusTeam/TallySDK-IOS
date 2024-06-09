@@ -16,9 +16,9 @@ In today's fast-paced digital world, financial transactions and data management 
 
 1. **Card Tokenization**: At the heart of secure financial transactions is card tokenization. This feature converts sensitive card information into a secure and encrypted token. This means that actual card details are never stored or transmitted in a way that could be exploited, significantly reducing the risk of fraud.
 
-2. **View the Latest Tokenized Card**: Users can easily access and view the most recently tokenized card, making it convenient to manage and use their preferred payment method without navigating through their entire card portfolio.
+2. **View the Latest Tokenized Card**: Users can easily access and view the most recently tokenized card, making it convenient to manage and use their preferred payment method without navigating their entire card portfolio.
 
-3. **View All Tokenized Cards**: For users with multiple tokenized cards, this feature provides a comprehensive overview of all their cards in one place. It simplifies card management and enhances user experience by offering easy access to their entire tokenized card list.
+3. **View All Tokenized Cards**: This feature provides a comprehensive overview of all their cards in one place for users with multiple tokenised cards. It simplifies card management and enhances user experience by offering easy access to their entire tokenized card list.
 
 4. **Save QR Code Image to User's Device Gallery**: This innovative feature allows users to save the QR code of their tokenized card directly to their device's gallery. It's a convenient way to store and retrieve QR codes for payments and transactions without the need for a physical card.
 
@@ -44,7 +44,7 @@ pod 'TallyiOS'
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo and run `pod install` from the Example directory first.
 
 
 ### Step 2: Configuring Your App
@@ -64,20 +64,19 @@ Replace the parameters with the necessary credentials. This action opens the Tal
 ### Card Tokenization
 The Tally SDK offers a secure way to handle card information through tokenization. This process converts sensitive card details into a secure token, minimizing the risk of exposing actual card information.
 
-- **Storing and Encrypting Card Data**: The SDK takes care of encrypting card information and storing it securely, leveraging Keychain. You don't need to manage the complexities of saving to the Keychain. The SDK makes use of Valet to achieve this To learn more about Valet visit [https://github.com/square/Valet] to lean more about Keychain visit [https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain]
+- **Storing and Encrypting Card Data**: The SDK takes care of encrypting card information and storing it securely, leveraging Keychain. You don't need to manage the complexities of saving to the Keychain. The SDK makes use of Valet to achieve this. To learn more about Valet, [click here](https://github.com/square/Valet) and to learn more about Keychain [click here](https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain)
   
 - **Reading Encrypted Data**: To access the stored and encrypted card information, use:
-  ```kotlin
-  val tokenizedCardsData = TallSecurityUtil.retrieveData(this)
+  ```swift
+  let tokenizedCardsData = TallDataUtil.shared.retrieveData()
   ```
-  This command retrieves and decrypts the data for you.
+  This command retrieves the data for you. You will need to check for `nil` as the SDK returns a `nil` value if it can't retrieve data from the keychain.
 
-- **Deleting Information**: If you need to clear stored data, simply call:
-  ```kotlin
-  TallSecurityUtil.deleteAllData(this)
+- **Deleting Information**: If you need to clear stored data, call:
+  ```swift
+   try TallDataUtil.shared.deleteAllData()
   ```
-
-
+You need to wrap this in a try-catch.
 ## License
 
 TallyiOS is available under the MIT license. See the LICENSE file for more info.
