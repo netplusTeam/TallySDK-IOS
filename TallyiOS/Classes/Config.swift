@@ -117,6 +117,14 @@ public struct TallyConfig {
         
     }
     
+    
+}
+
+
+public class TallDataUtil{
+    
+    static let shared = TallDataUtil()
+    
     public func retrieveData() -> EncryptedQrModelData? {
         return UserStore.shared.readEncryptedModelForSdk()
     }
@@ -124,7 +132,6 @@ public struct TallyConfig {
     public func deleteAllData() throws {
         return try UserStore.shared.clear()
     }
-    
 }
 
 
