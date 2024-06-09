@@ -29,19 +29,23 @@ In today's fast-paced digital world, financial transactions and data management 
 7. **View All Merchants and Location on Google Maps**: Enhancing the user experience further, this feature integrates with Google Maps to display merchants and their locations. Users can easily find where their transactions are happening, discover new merchants, and plan their visits accordingly.
 
 ### Step 1: Setting Up
-To get started, you need to add the Tally SDK to your project. This involves a simple modification to your project's build configuration.
+To get started, you need to add the Tally SDK to your project. 
 
-- **Add the SDK**: Insert a line in your project's `build.gradle` file under dependencies:
-  ```groovy
-  buildFeatures {
-        dataBinding = true
-        viewBinding = true
-    }
-  
-   implementation("com.github.netplusTeam:GetTallySDKUI:v1.2.1-beta")
-   implementation 'com.github.netplusTeam:GetTallySDK:v1.1.0-beta'
-  ```
-- **Update Java and Kotlin Compatibility** (Recommended but optional): To ensure the best performance and compatibility, update your project to use Java Version 17 and set the Kotlin target to the same. This might involve adjusting your compile options.
+## Requirements
+
+## Installation
+
+TallyiOS is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'TallyiOS'
+```
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 
 ### Step 2: Configuring Your App
 Your app needs the right permissions to make full use of Tally SDK's capabilities. This includes access to the internet, network state, location, and external storage. Add the necessary permissions to your `AndroidManifest.xml` file, only if they're not already present.
@@ -73,27 +77,6 @@ The Tally SDK offers a secure way to handle card information through tokenizatio
   TallSecurityUtil.deleteAllData(this)
   ```
 
-
-
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-TallyiOS is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'TallyiOS'
-```
-
-## Author
-
-50696559, ochornmapromise@gmail.com
 
 ## License
 
