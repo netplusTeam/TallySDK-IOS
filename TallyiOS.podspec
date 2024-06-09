@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TallyiOS'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A drop in library to accept payment with GetTally on iOS'
   s.description      = 'A drop in library to accept payment with GetTally on iOS. This is the easiest way to start collecting payments on your mobile apps.'
 
