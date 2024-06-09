@@ -48,7 +48,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 
 ### Step 2: Configuring Your App
-Your app needs the right permissions to make full use of Tally SDK's capabilities. This includes access to the internet, network state, location, and external storage. Add the necessary permissions to your `AndroidManifest.xml` file, only if they're not already present.
+Your app needs the right permissions to make full use of Tally SDK's capabilities. Ensure to have added `NSPhotoLibraryAddUsageDescription` to your `info.plist`, else the SDK will crash.
 
 ### Step 3: Using the SDK
 Integrating Tally SDK into your app's functionality is straightforward. For example, you can add it to a button in your app. When the user clicks this button, the SDK's user interface (UI) will launch, allowing them to interact with financial features securely. Here’s a simple setup to get you started:
