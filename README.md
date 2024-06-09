@@ -53,11 +53,11 @@ Your app needs the right permissions to make full use of Tally SDK's capabilitie
 ### Step 3: Using the SDK
 Integrating Tally SDK into your app's functionality is straightforward. For example, you can add it to a button in your app. When the user clicks this button, the SDK's user interface (UI) will launch, allowing them to interact with financial features securely. Here’s a simple setup to get you started:
 
-```kotlin
-myButton.setOnClickListener{
-   val intent = TallyActivity.getIntent(this, email, password, fullName, bankName, phoneNumber, userId)
-   startActivity(intent)
-}
+```swift
+ @IBAction func openTallySDK(){
+        let config = TallyConfig(userId: "userId", userFullName: "First Name and Last Name", userEmail: "userEmail@email.com", userPhone: "080********", bankName: "bankName", staging: true, token: nil)
+        config.openTallySdk(controller: self)
+    }
 ```
 Replace the parameters with the necessary credentials. This action opens the Tally SDK UI, ready for user interaction.
 
