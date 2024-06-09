@@ -1,0 +1,1320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001E99651C91C9C4AF9EDF5BD3C139AD /* webview.html in Sources */ = {isa = PBXBuildFile; fileRef = E260EC1D103B3A60C0BD93DA703F9D65 /* webview.html */; };
+		0723A0014D91C1BB56380CA4458251FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB00EB92B598E3B3BF1EF709037048 /* Foundation.framework */; };
+		08EDD0B7A1FBBE1BCE2590474BC346C6 /* TransactionItemTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6465561EE8BF5E5BC674AC760BAB90B1 /* TransactionItemTableViewCell.xib */; };
+		0A9B48BCE6A02DA96A81366B69D0F26F /* TallySDKAddCardViewController.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 9A685DD25FF1FA742878F5279357D3B0 /* TallySDKAddCardViewController.storyboard */; };
+		10B8AD8E29945B1AB878351417AD0F2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C0E921FD9BF9A3D6B82CC26F75AA2E /* UIKit.framework */; };
+		22A88E435BAA4459236FBD493FD35DD1 /* GenerateQrPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2344BC7B4CC303B66CFF90AE0DDC1F3 /* GenerateQrPayload.swift */; };
+		2B1115614A177BB90F36D6D5271E8959 /* SharedGroupIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723A6AC8BBA90EA60B89A0E9E312DF4 /* SharedGroupIdentifier.swift */; };
+		2B17DA92061A80B567DF70E2BCC69821 /* TokenizedItemTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 109FC40F19786B60B6E9DDE1F8F52897 /* TokenizedItemTableViewCell.xib */; };
+		32D866332FEEA394DD9A974F0F43E1D8 /* TalySDKTokenizedCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2284102FCD32C698C2C406D8699272AE /* TalySDKTokenizedCardsViewController.swift */; };
+		3365D7D20C8C0063AE1345E5D36E8A44 /* SinglePromptSecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7BED6F5D6A12DE5725A0B46E3208B0 /* SinglePromptSecureEnclaveValet.swift */; };
+		3481C2C9408929A9C6C26104ED25DF45 /* SecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DCD1D023F708F944A7E43050AD9B /* SecItem.swift */; };
+		34BE8ED1ACB723880F89D3D2574230EA /* TallySDKTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D01CD28AA0FA85387117F1AA7F02366 /* TallySDKTransactionsViewController.swift */; };
+		35607A5FF40C2A32CEFC0F32979C44EF /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D699044B4EA887E44D06027618E3F27C /* StoryboardLoadable.swift */; };
+		3E277EB4C461FC5A37C057B66C449DBC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D630BB917E658C7765EA45A5A9CBA7 /* Security.framework */; };
+		3F7EFD877A68673FB26A23D10437EC06 /* TallySDKTransactionsViewController.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 80CD6144B5EA484BF262EC34A3425FF0 /* TallySDKTransactionsViewController.storyboard */; };
+		43AB9DA791915AD2128FF82C18B40C4D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7ABDB14D3136107D5674737CF8E19D /* String+Extension.swift */; };
+		44F04082CB4108E8FCBC46CD3715D2A2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2180D885EA96AFE4D5A31EE75B27419 /* Configuration.swift */; };
+		4A277849F8FF76B8C8A43C106ABF0005 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CA2BBF2EA79F49C5E455F7FA11C /* View+Extension.swift */; };
+		4A31931FDB9E0E6B45EF22F7DC762FB8 /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1ECD7810FE2943ADC19E0112AD85F /* Valet-dummy.m */; };
+		4E844D0BA90850B5CC645E09A4AADF75 /* Pods-TallyiOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B8EFA930755B75245647E7123B3AC8 /* Pods-TallyiOS_Tests-dummy.m */; };
+		52BC6910AC9D9D25AC11B3B63517D6B0 /* CheckOutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76C7F362F83625B4523DE840FBB58D3 /* CheckOutResponse.swift */; };
+		52F90F304BF57F8696BF4E5A91FED15B /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518D4C98ED86014E1499758F397E96D4 /* Identifier.swift */; };
+		55A10A3F8ACDCAB30BD73653CF8CD8FC /* TallyiOS-TallyiOS in Resources */ = {isa = PBXBuildFile; fileRef = 76265FD713F244D36A0D3FE8C19F2ABE /* TallyiOS-TallyiOS */; };
+		5EA2E52DEF201EF8A1770FC736FE2A4D /* CloudAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00747698ED82562265B87B609F204461 /* CloudAccessibility.swift */; };
+		5EAA9575A491E965B3F3D2814FD1C69B /* TallySDKViewController.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 15C0C99813E1473B73BD83921329EB38 /* TallySDKViewController.storyboard */; };
+		65EE36E128F004092C76C2BA2C809D4A /* TalySDKTokenizedCardsViewController.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = FCC33AA421A070CBCBCEA451B45C6EF7 /* TalySDKTokenizedCardsViewController.storyboard */; };
+		7161424A7831F3B478829200544F971C /* SecureEnclaveAccessControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBCBC3C58C181BAE525989FC2CFD4CD /* SecureEnclaveAccessControl.swift */; };
+		7550BDB75AD3AC05AC383AB26378F7EC /* TransactionItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7162BD1F4F1884AB8EEA3313CFEEF8DE /* TransactionItemTableViewCell.swift */; };
+		784ED00F8FCCB00AB988D629D011CCDE /* TokenizedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFBC1F353DC54A281C07BE3E23912D /* TokenizedItemTableViewCell.swift */; };
+		785F8DC6209430271B9329FA4705261F /* TallySDKRecentTokenizedViewController.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = EB480E7BC1AAD329A2ECFD416148356D /* TallySDKRecentTokenizedViewController.storyboard */; };
+		8135EA8D9E06B359E5B0874CC7E98B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6279239A57D8134B10391F913392F7 /* Assets.xcassets */; };
+		8521CA715BE2956E2823DF86EEDB222F /* TallySDKAddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE8CDBC176CCAC26A463F7E24B28C1 /* TallySDKAddCardViewController.swift */; };
+		8533868C3B0FE95925663B269F2CED42 /* TallyiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFD01E1D6DCE07C0BBFA14513A5DCDF /* TallyiOS-dummy.m */; };
+		9133E1416A5ABB007B45391439D2FF1E /* TallySDKRecentTokenizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFAC4A027C0F9DDD945C99861225EAE /* TallySDKRecentTokenizedViewController.swift */; };
+		9260A0912116E1D0C643EAB18150EED3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF754F51AE1A05C7BEA825DC7EB025C /* Config.swift */; };
+		9A62B41AE357E6FB9A24BED12A4B2C22 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB21605F0D4730C6901CB986B9B3B6 /* Service.swift */; };
+		A0094A2EAD676783C49E6C9B63AD8673 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989920C41D3DA63B90F9E7D43C2F475 /* Util.swift */; };
+		A1103A17AF14AE6FE68F3B59EB65630B /* MigratableKeyValuePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063B37D4B839542E550BB00516825B01 /* MigratableKeyValuePair.swift */; };
+		AF0BF674950B21D8959F441E16A5F42A /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C47AA29A35E35EB9276B4EE6896D13 /* ProgressIndicator.swift */; };
+		B677933D2C03E21100E73A52 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677933C2C03E21100E73A52 /* TokenManager.swift */; };
+		B67D99B12C039FF10001B734 /* UpdatedTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67D99B02C039FF10001B734 /* UpdatedTransactionResponse.swift */; };
+		B68F01FB2C04768D00645CF1 /* AcardTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F01FA2C04768D00645CF1 /* AcardTransactionViewController.swift */; };
+		B68F02022C047C5C00645CF1 /* AcardTransactionViewController.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = B68F02002C047BD800645CF1 /* AcardTransactionViewController.storyboard */; };
+		B6B617BC2C1152E200FD4116 /* MerchantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B617BB2C1152E200FD4116 /* MerchantsViewController.swift */; };
+		B6E750E32C13B27400F06C64 /* MerchantsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E750E22C13B27400F06C64 /* MerchantsTableViewCell.swift */; };
+		B6E750E82C13BFB700F06C64 /* MerchantsTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = B6E750E42C13B2AA00F06C64 /* MerchantsTableViewCell.xib */; };
+		B6E750E92C13BFC700F06C64 /* MerchantsViewController.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = B6E750E62C13BEDA00F06C64 /* MerchantsViewController.storyboard */; };
+		B6F8FDB02C118E9E0023FC2C /* MerchantResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8FDAF2C118E9E0023FC2C /* MerchantResponse.swift */; };
+		BBA7CC0E895E91C0D0643416BD0A0077 /* ReUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2248EF11B7C10605516948FAF27F994 /* ReUsable.swift */; };
+		BE590F62C481D639FA494564CEF52C39 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1C35B8093909AE11E0833C4DE1C091 /* Accessibility.swift */; };
+		C0D1E7F07AF8A944A320C82FB514905F /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFDDA501DD91DC6D916A825E3BB389 /* KeychainError.swift */; };
+		C12F8E0763C1E4D37C77F817CE6A5D27 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CBF64BB3E31C1D058373236993DAF1 /* MapKit.framework */; };
+		C39B9ADE9CB6247AE18D8C94DAAE046A /* MigrationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF9B31DAC6E71685D9A7EA16D40392 /* MigrationError.swift */; };
+		CE871FE3549C3F5AEF774A3083DD97A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB00EB92B598E3B3BF1EF709037048 /* Foundation.framework */; };
+		CEA1CEC7C8EF1CBDEB3FA39B4128054B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BB9E5532082C448C4EB3C1BF04DFC /* Keychain.swift */; };
+		CF6CDC0408ADCEBD849D1F297C754658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB00EB92B598E3B3BF1EF709037048 /* Foundation.framework */; };
+		D45A72C9008EE9C6393AA024D65DF775 /* Pods-TallyiOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3682BB0325F58C71501860497230091 /* Pods-TallyiOS_Example-dummy.m */; };
+		D5385857C42793B1277AF5116C25C02C /* Valet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 807588AB2BA506D855537B3252BD92E8 /* Valet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E00390984AA829DD29666BADA3D1FF48 /* TallyiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47F714B771962865A7623690CB21889D /* TallyiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7D92CFE8B2878D4358250E63959AAA4 /* Pods-TallyiOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F62CD1293E66B8AA6756EB7A699A85 /* Pods-TallyiOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECA80A4ED6BDD1EBFC98B65D9457AE36 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA32A8F56FDC2FBED9A744543F3BE10 /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0A7E4C006A20D4EF143C3AAB5BB12AC /* Pods-TallyiOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6AD23AFEBD9978AB4B66E8C55907F28 /* Pods-TallyiOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0C33671F6294DA7B713A472F4BFE018 /* SecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56184BC52964B9019B455215B8DF4D /* SecureEnclaveValet.swift */; };
+		F319FA78CA29F500D7665F56844D6CB9 /* TallySDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D4CF77EE1B4AE1B1077795D53FFBF /* TallySDKViewController.swift */; };
+		F50307F136E277D0966FE477FF9E6F3B /* SecureEnclave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F14F0F7E3E8B2B92EECD285AEF06B65 /* SecureEnclave.swift */; };
+		F82C943852452550F2C45FBFE3FD2B9E /* Valet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CD20B8280DABA05BA3853BB8BEA2E /* Valet.swift */; };
+		F8B36B45DCB409ACF490F63972C08105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB00EB92B598E3B3BF1EF709037048 /* Foundation.framework */; };
+		FFCF9D088617D7DC6AD122295755B6E5 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16B7535E2B69D149C1A6EC67173D0DB /* NetworkHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A85FC0676A5F28928D73C288FB02555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF655A0C50017F38EE7D9B1E9D0417F4;
+			remoteInfo = "Pods-TallyiOS_Example";
+		};
+		618C14830EFEDB4918DA3AA3695BE33F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3411DC41B8F9A3E7EA2A33D849F7753F;
+			remoteInfo = "TallyiOS-TallyiOS";
+		};
+		87D266075BBFA55F6E7DCDDEB396A438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637B944CC2EFEBB0E664BC9552337985;
+			remoteInfo = TallyiOS;
+		};
+		DD84923C1476BC7C07ED9E28BF396DB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3D29E214E770F28213292B63B7A05DA;
+			remoteInfo = Valet;
+		};
+		E16B6A0EB1A7282441E3E295F7B45740 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3D29E214E770F28213292B63B7A05DA;
+			remoteInfo = Valet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00747698ED82562265B87B609F204461 /* CloudAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudAccessibility.swift; path = Sources/Valet/CloudAccessibility.swift; sourceTree = "<group>"; };
+		063B37D4B839542E550BB00516825B01 /* MigratableKeyValuePair.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MigratableKeyValuePair.swift; path = Sources/Valet/MigratableKeyValuePair.swift; sourceTree = "<group>"; };
+		0723A6AC8BBA90EA60B89A0E9E312DF4 /* SharedGroupIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedGroupIdentifier.swift; path = Sources/Valet/SharedGroupIdentifier.swift; sourceTree = "<group>"; };
+		09151E8780AEAD0E0C49602F3D3CAE19 /* Pods-TallyiOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TallyiOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		091CD20B8280DABA05BA3853BB8BEA2E /* Valet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Valet.swift; path = Sources/Valet/Valet.swift; sourceTree = "<group>"; };
+		0D78653FA748030FF76F300BF7D32B35 /* Pods-TallyiOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TallyiOS_Example.modulemap"; sourceTree = "<group>"; };
+		109FC40F19786B60B6E9DDE1F8F52897 /* TokenizedItemTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TokenizedItemTableViewCell.xib; sourceTree = "<group>"; };
+		15C0C99813E1473B73BD83921329EB38 /* TallySDKViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = TallySDKViewController.storyboard; path = TallyiOS/Classes/TallySDKViewController.storyboard; sourceTree = "<group>"; };
+		16AF605E599C089381C1E3C402798E20 /* Pods-TallyiOS_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TallyiOS_Example"; path = Pods_TallyiOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B8EFA930755B75245647E7123B3AC8 /* Pods-TallyiOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TallyiOS_Tests-dummy.m"; sourceTree = "<group>"; };
+		1CA32A8F56FDC2FBED9A744543F3BE10 /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Sources/Valet/Valet.h; sourceTree = "<group>"; };
+		1D415EB5B0958D5D35B1C638C54706F1 /* TallyiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TallyiOS-Info.plist"; sourceTree = "<group>"; };
+		2284102FCD32C698C2C406D8699272AE /* TalySDKTokenizedCardsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TalySDKTokenizedCardsViewController.swift; path = TallyiOS/Classes/TalySDKTokenizedCardsViewController.swift; sourceTree = "<group>"; };
+		244BB9E5532082C448C4EB3C1BF04DFC /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Sources/Valet/Internal/Keychain.swift; sourceTree = "<group>"; };
+		27CE8CDBC176CCAC26A463F7E24B28C1 /* TallySDKAddCardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TallySDKAddCardViewController.swift; path = TallyiOS/Classes/TallySDKAddCardViewController.swift; sourceTree = "<group>"; };
+		2F7ABDB14D3136107D5674737CF8E19D /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		31C47AA29A35E35EB9276B4EE6896D13 /* ProgressIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressIndicator.swift; path = TallyiOS/Classes/ProgressIndicator.swift; sourceTree = "<group>"; };
+		3DCFBC1F353DC54A281C07BE3E23912D /* TokenizedItemTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenizedItemTableViewCell.swift; sourceTree = "<group>"; };
+		47F714B771962865A7623690CB21889D /* TallyiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TallyiOS-umbrella.h"; sourceTree = "<group>"; };
+		4D8D4CF77EE1B4AE1B1077795D53FFBF /* TallySDKViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TallySDKViewController.swift; path = TallyiOS/Classes/TallySDKViewController.swift; sourceTree = "<group>"; };
+		4EBFBB249A2DB1B0EE70A9950C60220E /* TallyiOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TallyiOS; path = TallyiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		518D4C98ED86014E1499758F397E96D4 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Sources/Valet/Identifier.swift; sourceTree = "<group>"; };
+		5AFB00EB92B598E3B3BF1EF709037048 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5D93AA787909D7E96E63BDB4131A563E /* Pods-TallyiOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TallyiOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5DF754F51AE1A05C7BEA825DC7EB025C /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = TallyiOS/Classes/Config.swift; sourceTree = "<group>"; };
+		5FCA5581B48325DA09E40EBB56EB6A77 /* Pods-TallyiOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TallyiOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6465561EE8BF5E5BC674AC760BAB90B1 /* TransactionItemTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TransactionItemTableViewCell.xib; sourceTree = "<group>"; };
+		6A11E74C33FF1AC28B65119C88ECD103 /* Pods-TallyiOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TallyiOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6EBCBC3C58C181BAE525989FC2CFD4CD /* SecureEnclaveAccessControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveAccessControl.swift; path = Sources/Valet/SecureEnclaveAccessControl.swift; sourceTree = "<group>"; };
+		7162BD1F4F1884AB8EEA3313CFEEF8DE /* TransactionItemTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionItemTableViewCell.swift; sourceTree = "<group>"; };
+		75750890660A678E0FA175D9E2CE1F2A /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
+		7601BA4FB35F6E084E26026DAAEDD230 /* TallyiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TallyiOS.debug.xcconfig; sourceTree = "<group>"; };
+		76265FD713F244D36A0D3FE8C19F2ABE /* TallyiOS-TallyiOS */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "TallyiOS-TallyiOS"; path = TallyiOS.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7989920C41D3DA63B90F9E7D43C2F475 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		7A15C7634F733354471C57D400C1A9C3 /* Pods-TallyiOS_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TallyiOS_Tests"; path = Pods_TallyiOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7B51F48D43FF74FFF7509A14184CE2 /* Pods-TallyiOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TallyiOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7D01CD28AA0FA85387117F1AA7F02366 /* TallySDKTransactionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TallySDKTransactionsViewController.swift; path = TallyiOS/Classes/TallySDKTransactionsViewController.swift; sourceTree = "<group>"; };
+		7F14F0F7E3E8B2B92EECD285AEF06B65 /* SecureEnclave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclave.swift; path = Sources/Valet/SecureEnclave.swift; sourceTree = "<group>"; };
+		807588AB2BA506D855537B3252BD92E8 /* Valet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-umbrella.h"; sourceTree = "<group>"; };
+		80CD6144B5EA484BF262EC34A3425FF0 /* TallySDKTransactionsViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = TallySDKTransactionsViewController.storyboard; path = TallyiOS/Classes/TallySDKTransactionsViewController.storyboard; sourceTree = "<group>"; };
+		838DF9CF2D332FD7EBEEF6BC1BB565E1 /* ResourceBundle-TallyiOS-TallyiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TallyiOS-TallyiOS-Info.plist"; sourceTree = "<group>"; };
+		83CBF64BB3E31C1D058373236993DAF1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		87C0E921FD9BF9A3D6B82CC26F75AA2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		898858811E04A43A678AA97ED5B98456 /* Valet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Valet.modulemap; sourceTree = "<group>"; };
+		8AE69E3FAD45E36C2735B5450DFA73A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8B6279239A57D8134B10391F913392F7 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TallyiOS/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		8C7BED6F5D6A12DE5725A0B46E3208B0 /* SinglePromptSecureEnclaveValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SinglePromptSecureEnclaveValet.swift; path = Sources/Valet/SinglePromptSecureEnclaveValet.swift; sourceTree = "<group>"; };
+		8EB0E579A4B0D816B9D5335574FFB295 /* Pods-TallyiOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TallyiOS_Tests-Info.plist"; sourceTree = "<group>"; };
+		96AD645059F750FE075C78BDD43DD1F7 /* Pods-TallyiOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TallyiOS_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9A685DD25FF1FA742878F5279357D3B0 /* TallySDKAddCardViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = TallySDKAddCardViewController.storyboard; path = TallyiOS/Classes/TallySDKAddCardViewController.storyboard; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2180D885EA96AFE4D5A31EE75B27419 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Valet/Internal/Configuration.swift; sourceTree = "<group>"; };
+		A238E0F8440D6C8B2F88F4F3B297D224 /* Pods-TallyiOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TallyiOS_Tests.modulemap"; sourceTree = "<group>"; };
+		A4339B7E06E369849201309FE1FA4A2D /* Pods-TallyiOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TallyiOS_Example-Info.plist"; sourceTree = "<group>"; };
+		A93D71CA984AFEE37A377C44CD85D49A /* TallyiOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TallyiOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABFAC4A027C0F9DDD945C99861225EAE /* TallySDKRecentTokenizedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TallySDKRecentTokenizedViewController.swift; path = TallyiOS/Classes/TallySDKRecentTokenizedViewController.swift; sourceTree = "<group>"; };
+		B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Valet; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B677933C2C03E21100E73A52 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		B67D99B02C039FF10001B734 /* UpdatedTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedTransactionResponse.swift; sourceTree = "<group>"; };
+		B68F01FA2C04768D00645CF1 /* AcardTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AcardTransactionViewController.swift; path = TallyiOS/Classes/AcardTransactionViewController.swift; sourceTree = "<group>"; };
+		B68F02002C047BD800645CF1 /* AcardTransactionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AcardTransactionViewController.storyboard; path = TallyiOS/Classes/AcardTransactionViewController.storyboard; sourceTree = "<group>"; };
+		B6AD23AFEBD9978AB4B66E8C55907F28 /* Pods-TallyiOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TallyiOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		B6B617BB2C1152E200FD4116 /* MerchantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MerchantsViewController.swift; path = TallyiOS/Classes/MerchantsViewController.swift; sourceTree = "<group>"; };
+		B6E750E22C13B27400F06C64 /* MerchantsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantsTableViewCell.swift; sourceTree = "<group>"; };
+		B6E750E42C13B2AA00F06C64 /* MerchantsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantsTableViewCell.xib; sourceTree = "<group>"; };
+		B6E750E62C13BEDA00F06C64 /* MerchantsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MerchantsViewController.storyboard; path = TallyiOS/Classes/MerchantsViewController.storyboard; sourceTree = "<group>"; };
+		B6F8FDAF2C118E9E0023FC2C /* MerchantResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantResponse.swift; sourceTree = "<group>"; };
+		BDEB21605F0D4730C6901CB986B9B3B6 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Sources/Valet/Internal/Service.swift; sourceTree = "<group>"; };
+		C16B7535E2B69D149C1A6EC67173D0DB /* NetworkHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		C1C4063F339720C85AEE8FB3604D6A25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C2248EF11B7C10605516948FAF27F994 /* ReUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReUsable.swift; sourceTree = "<group>"; };
+		C2344BC7B4CC303B66CFF90AE0DDC1F3 /* GenerateQrPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GenerateQrPayload.swift; sourceTree = "<group>"; };
+		C29A69DE3BE6F6F6772A0860A0F1FEB6 /* Valet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Valet-Info.plist"; sourceTree = "<group>"; };
+		C4D630BB917E658C7765EA45A5A9CBA7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C7FF5A0EA2B41ECA4527610CDCD2A336 /* TallyiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TallyiOS-prefix.pch"; sourceTree = "<group>"; };
+		C8AF9B31DAC6E71685D9A7EA16D40392 /* MigrationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MigrationError.swift; path = Sources/Valet/MigrationError.swift; sourceTree = "<group>"; };
+		CC279056B56D459823CAC2ACC70D5A0E /* Valet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.release.xcconfig; sourceTree = "<group>"; };
+		CD56184BC52964B9019B455215B8DF4D /* SecureEnclaveValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveValet.swift; path = Sources/Valet/SecureEnclaveValet.swift; sourceTree = "<group>"; };
+		CFD12CA2BBF2EA79F49C5E455F7FA11C /* View+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		D36F98EFC0BE0DCD82E4B861824DF9C8 /* TallyiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TallyiOS.modulemap; sourceTree = "<group>"; };
+		D699044B4EA887E44D06027618E3F27C /* StoryboardLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardLoadable.swift; path = TallyiOS/Classes/StoryboardLoadable.swift; sourceTree = "<group>"; };
+		D76C7F362F83625B4523DE840FBB58D3 /* CheckOutResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CheckOutResponse.swift; sourceTree = "<group>"; };
+		DBA52DCF1221C79163DDE8030A4C4009 /* Pods-TallyiOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TallyiOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E260EC1D103B3A60C0BD93DA703F9D65 /* webview.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; path = webview.html; sourceTree = "<group>"; };
+		E5CF02C763D084156BFD45E05F820CBD /* Valet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.debug.xcconfig; sourceTree = "<group>"; };
+		EAFFDDA501DD91DC6D916A825E3BB389 /* KeychainError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainError.swift; path = Sources/Valet/KeychainError.swift; sourceTree = "<group>"; };
+		EB480E7BC1AAD329A2ECFD416148356D /* TallySDKRecentTokenizedViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = TallySDKRecentTokenizedViewController.storyboard; path = TallyiOS/Classes/TallySDKRecentTokenizedViewController.storyboard; sourceTree = "<group>"; };
+		EBFD01E1D6DCE07C0BBFA14513A5DCDF /* TallyiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TallyiOS-dummy.m"; sourceTree = "<group>"; };
+		EE1C35B8093909AE11E0833C4DE1C091 /* Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Accessibility.swift; path = Sources/Valet/Accessibility.swift; sourceTree = "<group>"; };
+		F0F62CD1293E66B8AA6756EB7A699A85 /* Pods-TallyiOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TallyiOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F3682BB0325F58C71501860497230091 /* Pods-TallyiOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TallyiOS_Example-dummy.m"; sourceTree = "<group>"; };
+		F57DD3761668282C2270F592A9E7E258 /* Pods-TallyiOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TallyiOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FAD06ED0F182A12F8ADB8814D50F8C75 /* TallyiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TallyiOS.release.xcconfig; sourceTree = "<group>"; };
+		FCC33AA421A070CBCBCEA451B45C6EF7 /* TalySDKTokenizedCardsViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = TalySDKTokenizedCardsViewController.storyboard; path = TallyiOS/Classes/TalySDKTokenizedCardsViewController.storyboard; sourceTree = "<group>"; };
+		FF2FADD671424CD9761A6C7E22302089 /* Pods-TallyiOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TallyiOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FFF1ECD7810FE2943ADC19E0112AD85F /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
+		FFF8DCD1D023F708F944A7E43050AD9B /* SecItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecItem.swift; path = Sources/Valet/Internal/SecItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05E716B5210E2EB3D23A3ABF79FAF515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0723A0014D91C1BB56380CA4458251FC /* Foundation.framework in Frameworks */,
+				3E277EB4C461FC5A37C057B66C449DBC /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CBE5B48B75AF153A338AE3F5DB0947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241F44943F98D790DA6E9C786E687118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B36B45DCB409ACF490F63972C08105 /* Foundation.framework in Frameworks */,
+				C12F8E0763C1E4D37C77F817CE6A5D27 /* MapKit.framework in Frameworks */,
+				10B8AD8E29945B1AB878351417AD0F2B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		401E376BC923DFB24F7E0F52F81C384E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6CDC0408ADCEBD849D1F297C754658 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE870974159B397556D52BC946C2D4A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE871FE3549C3F5AEF774A3083DD97A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0797F7137693BC3EA551E55F74CBFC01 /* Valet */ = {
+			isa = PBXGroup;
+			children = (
+				EE1C35B8093909AE11E0833C4DE1C091 /* Accessibility.swift */,
+				00747698ED82562265B87B609F204461 /* CloudAccessibility.swift */,
+				A2180D885EA96AFE4D5A31EE75B27419 /* Configuration.swift */,
+				518D4C98ED86014E1499758F397E96D4 /* Identifier.swift */,
+				244BB9E5532082C448C4EB3C1BF04DFC /* Keychain.swift */,
+				EAFFDDA501DD91DC6D916A825E3BB389 /* KeychainError.swift */,
+				063B37D4B839542E550BB00516825B01 /* MigratableKeyValuePair.swift */,
+				C8AF9B31DAC6E71685D9A7EA16D40392 /* MigrationError.swift */,
+				FFF8DCD1D023F708F944A7E43050AD9B /* SecItem.swift */,
+				7F14F0F7E3E8B2B92EECD285AEF06B65 /* SecureEnclave.swift */,
+				6EBCBC3C58C181BAE525989FC2CFD4CD /* SecureEnclaveAccessControl.swift */,
+				CD56184BC52964B9019B455215B8DF4D /* SecureEnclaveValet.swift */,
+				BDEB21605F0D4730C6901CB986B9B3B6 /* Service.swift */,
+				0723A6AC8BBA90EA60B89A0E9E312DF4 /* SharedGroupIdentifier.swift */,
+				8C7BED6F5D6A12DE5725A0B46E3208B0 /* SinglePromptSecureEnclaveValet.swift */,
+				1CA32A8F56FDC2FBED9A744543F3BE10 /* Valet.h */,
+				091CD20B8280DABA05BA3853BB8BEA2E /* Valet.swift */,
+				8E4E6387C1027ABBA42A6E1379C76DC3 /* Support Files */,
+			);
+			path = Valet;
+			sourceTree = "<group>";
+		};
+		16E465753403B99F2792E67BD57618F5 /* TableView+Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C2248EF11B7C10605516948FAF27F994 /* ReUsable.swift */,
+				3DCFBC1F353DC54A281C07BE3E23912D /* TokenizedItemTableViewCell.swift */,
+				109FC40F19786B60B6E9DDE1F8F52897 /* TokenizedItemTableViewCell.xib */,
+				7162BD1F4F1884AB8EEA3313CFEEF8DE /* TransactionItemTableViewCell.swift */,
+				6465561EE8BF5E5BC674AC760BAB90B1 /* TransactionItemTableViewCell.xib */,
+				B6E750E22C13B27400F06C64 /* MerchantsTableViewCell.swift */,
+				B6E750E42C13B2AA00F06C64 /* MerchantsTableViewCell.xib */,
+			);
+			name = "TableView+Cell";
+			path = "TallyiOS/Classes/TableView+Cell";
+			sourceTree = "<group>";
+		};
+		4B03E96EAA711F455CFECFCF8B2550DE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C16B7535E2B69D149C1A6EC67173D0DB /* NetworkHandler.swift */,
+				E260EC1D103B3A60C0BD93DA703F9D65 /* webview.html */,
+				523E2CED5AC82386192E8A7CD0A35284 /* Model */,
+			);
+			name = Network;
+			path = TallyiOS/Classes/Network;
+			sourceTree = "<group>";
+		};
+		51437E2F5742B4DB4ADF3155E76CB37B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				838DF9CF2D332FD7EBEEF6BC1BB565E1 /* ResourceBundle-TallyiOS-TallyiOS-Info.plist */,
+				D36F98EFC0BE0DCD82E4B861824DF9C8 /* TallyiOS.modulemap */,
+				EBFD01E1D6DCE07C0BBFA14513A5DCDF /* TallyiOS-dummy.m */,
+				1D415EB5B0958D5D35B1C638C54706F1 /* TallyiOS-Info.plist */,
+				C7FF5A0EA2B41ECA4527610CDCD2A336 /* TallyiOS-prefix.pch */,
+				47F714B771962865A7623690CB21889D /* TallyiOS-umbrella.h */,
+				7601BA4FB35F6E084E26026DAAEDD230 /* TallyiOS.debug.xcconfig */,
+				FAD06ED0F182A12F8ADB8814D50F8C75 /* TallyiOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TallyiOS";
+			sourceTree = "<group>";
+		};
+		523E2CED5AC82386192E8A7CD0A35284 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B67D99B02C039FF10001B734 /* UpdatedTransactionResponse.swift */,
+				D76C7F362F83625B4523DE840FBB58D3 /* CheckOutResponse.swift */,
+				C2344BC7B4CC303B66CFF90AE0DDC1F3 /* GenerateQrPayload.swift */,
+				B6F8FDAF2C118E9E0023FC2C /* MerchantResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53C57A4050A12B35B72FF15D9BB2F168 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8AE69E3FAD45E36C2735B5450DFA73A1 /* LICENSE */,
+				C1C4063F339720C85AEE8FB3604D6A25 /* README.md */,
+				A93D71CA984AFEE37A377C44CD85D49A /* TallyiOS.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6BC44FA33F09A39E975FA32C220ABE98 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5AFB00EB92B598E3B3BF1EF709037048 /* Foundation.framework */,
+				83CBF64BB3E31C1D058373236993DAF1 /* MapKit.framework */,
+				C4D630BB917E658C7765EA45A5A9CBA7 /* Security.framework */,
+				87C0E921FD9BF9A3D6B82CC26F75AA2E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7D01CE20B827CAC546C319D3D0E415CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16AF605E599C089381C1E3C402798E20 /* Pods-TallyiOS_Example */,
+				7A15C7634F733354471C57D400C1A9C3 /* Pods-TallyiOS_Tests */,
+				4EBFBB249A2DB1B0EE70A9950C60220E /* TallyiOS */,
+				76265FD713F244D36A0D3FE8C19F2ABE /* TallyiOS-TallyiOS */,
+				B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E4E6387C1027ABBA42A6E1379C76DC3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				898858811E04A43A678AA97ED5B98456 /* Valet.modulemap */,
+				FFF1ECD7810FE2943ADC19E0112AD85F /* Valet-dummy.m */,
+				C29A69DE3BE6F6F6772A0860A0F1FEB6 /* Valet-Info.plist */,
+				75750890660A678E0FA175D9E2CE1F2A /* Valet-prefix.pch */,
+				807588AB2BA506D855537B3252BD92E8 /* Valet-umbrella.h */,
+				E5CF02C763D084156BFD45E05F820CBD /* Valet.debug.xcconfig */,
+				CC279056B56D459823CAC2ACC70D5A0E /* Valet.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Valet";
+			sourceTree = "<group>";
+		};
+		9DE3817838BCFDA4CD94853B1ED847D2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4776B27E1E17058F3E255A4F0CCDFA6 /* Pods-TallyiOS_Example */,
+				A585A7A6B6585E14DBC2F15CDC53F254 /* Pods-TallyiOS_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A585A7A6B6585E14DBC2F15CDC53F254 /* Pods-TallyiOS_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A238E0F8440D6C8B2F88F4F3B297D224 /* Pods-TallyiOS_Tests.modulemap */,
+				DBA52DCF1221C79163DDE8030A4C4009 /* Pods-TallyiOS_Tests-acknowledgements.markdown */,
+				6A11E74C33FF1AC28B65119C88ECD103 /* Pods-TallyiOS_Tests-acknowledgements.plist */,
+				19B8EFA930755B75245647E7123B3AC8 /* Pods-TallyiOS_Tests-dummy.m */,
+				8EB0E579A4B0D816B9D5335574FFB295 /* Pods-TallyiOS_Tests-Info.plist */,
+				F0F62CD1293E66B8AA6756EB7A699A85 /* Pods-TallyiOS_Tests-umbrella.h */,
+				09151E8780AEAD0E0C49602F3D3CAE19 /* Pods-TallyiOS_Tests.debug.xcconfig */,
+				FF2FADD671424CD9761A6C7E22302089 /* Pods-TallyiOS_Tests.release.xcconfig */,
+			);
+			name = "Pods-TallyiOS_Tests";
+			path = "Target Support Files/Pods-TallyiOS_Tests";
+			sourceTree = "<group>";
+		};
+		B8855401B80A4BF8572311D5D9BAD2E3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C728CF770B21BA650253D830D91ABCEF /* TallyiOS */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BC44FA33F09A39E975FA32C220ABE98 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C728CF770B21BA650253D830D91ABCEF /* TallyiOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B6279239A57D8134B10391F913392F7 /* Assets.xcassets */,
+				5DF754F51AE1A05C7BEA825DC7EB025C /* Config.swift */,
+				31C47AA29A35E35EB9276B4EE6896D13 /* ProgressIndicator.swift */,
+				D699044B4EA887E44D06027618E3F27C /* StoryboardLoadable.swift */,
+				9A685DD25FF1FA742878F5279357D3B0 /* TallySDKAddCardViewController.storyboard */,
+				27CE8CDBC176CCAC26A463F7E24B28C1 /* TallySDKAddCardViewController.swift */,
+				EB480E7BC1AAD329A2ECFD416148356D /* TallySDKRecentTokenizedViewController.storyboard */,
+				ABFAC4A027C0F9DDD945C99861225EAE /* TallySDKRecentTokenizedViewController.swift */,
+				80CD6144B5EA484BF262EC34A3425FF0 /* TallySDKTransactionsViewController.storyboard */,
+				7D01CD28AA0FA85387117F1AA7F02366 /* TallySDKTransactionsViewController.swift */,
+				15C0C99813E1473B73BD83921329EB38 /* TallySDKViewController.storyboard */,
+				4D8D4CF77EE1B4AE1B1077795D53FFBF /* TallySDKViewController.swift */,
+				FCC33AA421A070CBCBCEA451B45C6EF7 /* TalySDKTokenizedCardsViewController.storyboard */,
+				2284102FCD32C698C2C406D8699272AE /* TalySDKTokenizedCardsViewController.swift */,
+				4B03E96EAA711F455CFECFCF8B2550DE /* Network */,
+				53C57A4050A12B35B72FF15D9BB2F168 /* Pod */,
+				51437E2F5742B4DB4ADF3155E76CB37B /* Support Files */,
+				16E465753403B99F2792E67BD57618F5 /* TableView+Cell */,
+				C9CACFF3762CF9D78F92DB87BCFDA63A /* Util */,
+				B68F01FA2C04768D00645CF1 /* AcardTransactionViewController.swift */,
+				B68F02002C047BD800645CF1 /* AcardTransactionViewController.storyboard */,
+				B6B617BB2C1152E200FD4116 /* MerchantsViewController.swift */,
+				B6E750E62C13BEDA00F06C64 /* MerchantsViewController.storyboard */,
+			);
+			name = TallyiOS;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C9CACFF3762CF9D78F92DB87BCFDA63A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2F7ABDB14D3136107D5674737CF8E19D /* String+Extension.swift */,
+				7989920C41D3DA63B90F9E7D43C2F475 /* Util.swift */,
+				CFD12CA2BBF2EA79F49C5E455F7FA11C /* View+Extension.swift */,
+				B677933C2C03E21100E73A52 /* TokenManager.swift */,
+			);
+			name = Util;
+			path = TallyiOS/Classes/Util;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B8855401B80A4BF8572311D5D9BAD2E3 /* Development Pods */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				D0775D3CD59AF052F288FF148010FF23 /* Pods */,
+				7D01CE20B827CAC546C319D3D0E415CD /* Products */,
+				9DE3817838BCFDA4CD94853B1ED847D2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0775D3CD59AF052F288FF148010FF23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0797F7137693BC3EA551E55F74CBFC01 /* Valet */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4776B27E1E17058F3E255A4F0CCDFA6 /* Pods-TallyiOS_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0D78653FA748030FF76F300BF7D32B35 /* Pods-TallyiOS_Example.modulemap */,
+				5FCA5581B48325DA09E40EBB56EB6A77 /* Pods-TallyiOS_Example-acknowledgements.markdown */,
+				F57DD3761668282C2270F592A9E7E258 /* Pods-TallyiOS_Example-acknowledgements.plist */,
+				F3682BB0325F58C71501860497230091 /* Pods-TallyiOS_Example-dummy.m */,
+				96AD645059F750FE075C78BDD43DD1F7 /* Pods-TallyiOS_Example-frameworks.sh */,
+				A4339B7E06E369849201309FE1FA4A2D /* Pods-TallyiOS_Example-Info.plist */,
+				B6AD23AFEBD9978AB4B66E8C55907F28 /* Pods-TallyiOS_Example-umbrella.h */,
+				7A7B51F48D43FF74FFF7509A14184CE2 /* Pods-TallyiOS_Example.debug.xcconfig */,
+				5D93AA787909D7E96E63BDB4131A563E /* Pods-TallyiOS_Example.release.xcconfig */,
+			);
+			name = "Pods-TallyiOS_Example";
+			path = "Target Support Files/Pods-TallyiOS_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		302B97BD60B2AA7A8A00E4D490175E66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D92CFE8B2878D4358250E63959AAA4 /* Pods-TallyiOS_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D163BADA643470F72FBAEF6F3EC9D57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A7E4C006A20D4EF143C3AAB5BB12AC /* Pods-TallyiOS_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E052B872DFF2516126931C6D0AA6CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA80A4ED6BDD1EBFC98B65D9457AE36 /* Valet.h in Headers */,
+				D5385857C42793B1277AF5116C25C02C /* Valet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E84C5A86523150D87ADA95F031292 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00390984AA829DD29666BADA3D1FF48 /* TallyiOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3411DC41B8F9A3E7EA2A33D849F7753F /* TallyiOS-TallyiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF083EB1CDFCE81B692ADC77E82F4EC /* Build configuration list for PBXNativeTarget "TallyiOS-TallyiOS" */;
+			buildPhases = (
+				E0D0C67433609620B741FA898D4502D0 /* Sources */,
+				18CBE5B48B75AF153A338AE3F5DB0947 /* Frameworks */,
+				BDF2CD59F783DDD5420C3210C8050722 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TallyiOS-TallyiOS";
+			productName = TallyiOS;
+			productReference = 76265FD713F244D36A0D3FE8C19F2ABE /* TallyiOS-TallyiOS */;
+			productType = "com.apple.product-type.bundle";
+		};
+		637B944CC2EFEBB0E664BC9552337985 /* TallyiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D85C048D8A2AE1603DC2963A926B6C5 /* Build configuration list for PBXNativeTarget "TallyiOS" */;
+			buildPhases = (
+				8E0E84C5A86523150D87ADA95F031292 /* Headers */,
+				EB6EE36FB78BDFEC5E36F7610C4449B4 /* Sources */,
+				241F44943F98D790DA6E9C786E687118 /* Frameworks */,
+				BEF555D89AB59E3947C594FCDDD56779 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE90D736EBF0672890F827F739379843 /* PBXTargetDependency */,
+				1E55D44DDD88DB376ED363953545E976 /* PBXTargetDependency */,
+			);
+			name = TallyiOS;
+			productName = TallyiOS;
+			productReference = 4EBFBB249A2DB1B0EE70A9950C60220E /* TallyiOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D793DC87F8CB75188DD0A78EABF51DB /* Pods-TallyiOS_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C307912DC69762AE13DDD058E2E291 /* Build configuration list for PBXNativeTarget "Pods-TallyiOS_Tests" */;
+			buildPhases = (
+				302B97BD60B2AA7A8A00E4D490175E66 /* Headers */,
+				77B6BEE7954B3B0A0D5162CDA74D8B41 /* Sources */,
+				401E376BC923DFB24F7E0F52F81C384E /* Frameworks */,
+				C1C2C68C7DA42FF6AD2CA7C8279A8A18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDC895BF0163FB8E3330062183355DE4 /* PBXTargetDependency */,
+			);
+			name = "Pods-TallyiOS_Tests";
+			productName = Pods_TallyiOS_Tests;
+			productReference = 7A15C7634F733354471C57D400C1A9C3 /* Pods-TallyiOS_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF655A0C50017F38EE7D9B1E9D0417F4 /* Pods-TallyiOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56016721A0A7D973A36186DE84BC71F1 /* Build configuration list for PBXNativeTarget "Pods-TallyiOS_Example" */;
+			buildPhases = (
+				6D163BADA643470F72FBAEF6F3EC9D57 /* Headers */,
+				C3AE7F709DBD490F20CB39F432CC430B /* Sources */,
+				FE870974159B397556D52BC946C2D4A1 /* Frameworks */,
+				CD4168649DD96B4D84F84DFF170CC6B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				627F50C1F8BA7FB850AF2DFBC9820367 /* PBXTargetDependency */,
+				6AA45D38AB938DCF6116E2A688D2C4B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-TallyiOS_Example";
+			productName = Pods_TallyiOS_Example;
+			productReference = 16AF605E599C089381C1E3C402798E20 /* Pods-TallyiOS_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3D29E214E770F28213292B63B7A05DA /* Valet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40D9278A5FDBBDE8C234E0EBFE71EF8C /* Build configuration list for PBXNativeTarget "Valet" */;
+			buildPhases = (
+				88E052B872DFF2516126931C6D0AA6CD /* Headers */,
+				4AE5161BFB12A7006110609817E67DE4 /* Sources */,
+				05E716B5210E2EB3D23A3ABF79FAF515 /* Frameworks */,
+				C3250856DF80C45BCD4B821EA1B7E106 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Valet;
+			productName = Valet;
+			productReference = B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7D01CE20B827CAC546C319D3D0E415CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF655A0C50017F38EE7D9B1E9D0417F4 /* Pods-TallyiOS_Example */,
+				6D793DC87F8CB75188DD0A78EABF51DB /* Pods-TallyiOS_Tests */,
+				637B944CC2EFEBB0E664BC9552337985 /* TallyiOS */,
+				3411DC41B8F9A3E7EA2A33D849F7753F /* TallyiOS-TallyiOS */,
+				E3D29E214E770F28213292B63B7A05DA /* Valet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDF2CD59F783DDD5420C3210C8050722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF555D89AB59E3947C594FCDDD56779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8135EA8D9E06B359E5B0874CC7E98B4A /* Assets.xcassets in Resources */,
+				55A10A3F8ACDCAB30BD73653CF8CD8FC /* TallyiOS-TallyiOS in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C2C68C7DA42FF6AD2CA7C8279A8A18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3250856DF80C45BCD4B821EA1B7E106 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4168649DD96B4D84F84DFF170CC6B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AE5161BFB12A7006110609817E67DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE590F62C481D639FA494564CEF52C39 /* Accessibility.swift in Sources */,
+				5EA2E52DEF201EF8A1770FC736FE2A4D /* CloudAccessibility.swift in Sources */,
+				44F04082CB4108E8FCBC46CD3715D2A2 /* Configuration.swift in Sources */,
+				52F90F304BF57F8696BF4E5A91FED15B /* Identifier.swift in Sources */,
+				CEA1CEC7C8EF1CBDEB3FA39B4128054B /* Keychain.swift in Sources */,
+				C0D1E7F07AF8A944A320C82FB514905F /* KeychainError.swift in Sources */,
+				A1103A17AF14AE6FE68F3B59EB65630B /* MigratableKeyValuePair.swift in Sources */,
+				C39B9ADE9CB6247AE18D8C94DAAE046A /* MigrationError.swift in Sources */,
+				3481C2C9408929A9C6C26104ED25DF45 /* SecItem.swift in Sources */,
+				F50307F136E277D0966FE477FF9E6F3B /* SecureEnclave.swift in Sources */,
+				7161424A7831F3B478829200544F971C /* SecureEnclaveAccessControl.swift in Sources */,
+				F0C33671F6294DA7B713A472F4BFE018 /* SecureEnclaveValet.swift in Sources */,
+				9A62B41AE357E6FB9A24BED12A4B2C22 /* Service.swift in Sources */,
+				2B1115614A177BB90F36D6D5271E8959 /* SharedGroupIdentifier.swift in Sources */,
+				3365D7D20C8C0063AE1345E5D36E8A44 /* SinglePromptSecureEnclaveValet.swift in Sources */,
+				F82C943852452550F2C45FBFE3FD2B9E /* Valet.swift in Sources */,
+				4A31931FDB9E0E6B45EF22F7DC762FB8 /* Valet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B6BEE7954B3B0A0D5162CDA74D8B41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E844D0BA90850B5CC645E09A4AADF75 /* Pods-TallyiOS_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3AE7F709DBD490F20CB39F432CC430B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45A72C9008EE9C6393AA024D65DF775 /* Pods-TallyiOS_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D0C67433609620B741FA898D4502D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6EE36FB78BDFEC5E36F7610C4449B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E750E92C13BFC700F06C64 /* MerchantsViewController.storyboard in Sources */,
+				B6E750E82C13BFB700F06C64 /* MerchantsTableViewCell.xib in Sources */,
+				B68F02022C047C5C00645CF1 /* AcardTransactionViewController.storyboard in Sources */,
+				52BC6910AC9D9D25AC11B3B63517D6B0 /* CheckOutResponse.swift in Sources */,
+				9260A0912116E1D0C643EAB18150EED3 /* Config.swift in Sources */,
+				B6E750E32C13B27400F06C64 /* MerchantsTableViewCell.swift in Sources */,
+				22A88E435BAA4459236FBD493FD35DD1 /* GenerateQrPayload.swift in Sources */,
+				FFCF9D088617D7DC6AD122295755B6E5 /* NetworkHandler.swift in Sources */,
+				AF0BF674950B21D8959F441E16A5F42A /* ProgressIndicator.swift in Sources */,
+				BBA7CC0E895E91C0D0643416BD0A0077 /* ReUsable.swift in Sources */,
+				35607A5FF40C2A32CEFC0F32979C44EF /* StoryboardLoadable.swift in Sources */,
+				43AB9DA791915AD2128FF82C18B40C4D /* String+Extension.swift in Sources */,
+				8533868C3B0FE95925663B269F2CED42 /* TallyiOS-dummy.m in Sources */,
+				0A9B48BCE6A02DA96A81366B69D0F26F /* TallySDKAddCardViewController.storyboard in Sources */,
+				8521CA715BE2956E2823DF86EEDB222F /* TallySDKAddCardViewController.swift in Sources */,
+				785F8DC6209430271B9329FA4705261F /* TallySDKRecentTokenizedViewController.storyboard in Sources */,
+				9133E1416A5ABB007B45391439D2FF1E /* TallySDKRecentTokenizedViewController.swift in Sources */,
+				B677933D2C03E21100E73A52 /* TokenManager.swift in Sources */,
+				3F7EFD877A68673FB26A23D10437EC06 /* TallySDKTransactionsViewController.storyboard in Sources */,
+				34BE8ED1ACB723880F89D3D2574230EA /* TallySDKTransactionsViewController.swift in Sources */,
+				5EAA9575A491E965B3F3D2814FD1C69B /* TallySDKViewController.storyboard in Sources */,
+				B6F8FDB02C118E9E0023FC2C /* MerchantResponse.swift in Sources */,
+				F319FA78CA29F500D7665F56844D6CB9 /* TallySDKViewController.swift in Sources */,
+				65EE36E128F004092C76C2BA2C809D4A /* TalySDKTokenizedCardsViewController.storyboard in Sources */,
+				32D866332FEEA394DD9A974F0F43E1D8 /* TalySDKTokenizedCardsViewController.swift in Sources */,
+				B67D99B12C039FF10001B734 /* UpdatedTransactionResponse.swift in Sources */,
+				784ED00F8FCCB00AB988D629D011CCDE /* TokenizedItemTableViewCell.swift in Sources */,
+				2B17DA92061A80B567DF70E2BCC69821 /* TokenizedItemTableViewCell.xib in Sources */,
+				B68F01FB2C04768D00645CF1 /* AcardTransactionViewController.swift in Sources */,
+				7550BDB75AD3AC05AC383AB26378F7EC /* TransactionItemTableViewCell.swift in Sources */,
+				08EDD0B7A1FBBE1BCE2590474BC346C6 /* TransactionItemTableViewCell.xib in Sources */,
+				A0094A2EAD676783C49E6C9B63AD8673 /* Util.swift in Sources */,
+				B6B617BC2C1152E200FD4116 /* MerchantsViewController.swift in Sources */,
+				4A277849F8FF76B8C8A43C106ABF0005 /* View+Extension.swift in Sources */,
+				001E99651C91C9C4AF9EDF5BD3C139AD /* webview.html in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E55D44DDD88DB376ED363953545E976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Valet;
+			target = E3D29E214E770F28213292B63B7A05DA /* Valet */;
+			targetProxy = DD84923C1476BC7C07ED9E28BF396DB9 /* PBXContainerItemProxy */;
+		};
+		627F50C1F8BA7FB850AF2DFBC9820367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TallyiOS;
+			target = 637B944CC2EFEBB0E664BC9552337985 /* TallyiOS */;
+			targetProxy = 87D266075BBFA55F6E7DCDDEB396A438 /* PBXContainerItemProxy */;
+		};
+		6AA45D38AB938DCF6116E2A688D2C4B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Valet;
+			target = E3D29E214E770F28213292B63B7A05DA /* Valet */;
+			targetProxy = E16B6A0EB1A7282441E3E295F7B45740 /* PBXContainerItemProxy */;
+		};
+		BDC895BF0163FB8E3330062183355DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TallyiOS_Example";
+			target = CF655A0C50017F38EE7D9B1E9D0417F4 /* Pods-TallyiOS_Example */;
+			targetProxy = 0A85FC0676A5F28928D73C288FB02555 /* PBXContainerItemProxy */;
+		};
+		CE90D736EBF0672890F827F739379843 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TallyiOS-TallyiOS";
+			target = 3411DC41B8F9A3E7EA2A33D849F7753F /* TallyiOS-TallyiOS */;
+			targetProxy = 618C14830EFEDB4918DA3AA3695BE33F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E9C0E9126FC790EAA5B69A39060268D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A7B51F48D43FF74FFF7509A14184CE2 /* Pods-TallyiOS_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TallyiOS_Example/Pods-TallyiOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TallyiOS_Example/Pods-TallyiOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41D53DDD40A910496913B9EE50DD2331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09151E8780AEAD0E0C49602F3D3CAE19 /* Pods-TallyiOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TallyiOS_Tests/Pods-TallyiOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TallyiOS_Tests/Pods-TallyiOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		483805EE29B4B6A858C6B97F085E7471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2FADD671424CD9761A6C7E22302089 /* Pods-TallyiOS_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TallyiOS_Tests/Pods-TallyiOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TallyiOS_Tests/Pods-TallyiOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A07D24F314C4FF3CA01A07122CF6F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D93AA787909D7E96E63BDB4131A563E /* Pods-TallyiOS_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TallyiOS_Example/Pods-TallyiOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TallyiOS_Example/Pods-TallyiOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69F74C9D2D6E034492F18B6487C2D085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5CF02C763D084156BFD45E05F820CBD /* Valet.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Valet/Valet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Valet/Valet.modulemap";
+				PRODUCT_MODULE_NAME = Valet;
+				PRODUCT_NAME = Valet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		92A8795E5B8876976287652DB5346950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7601BA4FB35F6E084E26026DAAEDD230 /* TallyiOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TallyiOS";
+				IBSC_MODULE = TallyiOS;
+				INFOPLIST_FILE = "Target Support Files/TallyiOS/ResourceBundle-TallyiOS-TallyiOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = TallyiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AFF918F01490B4877F812394E2744A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD06ED0F182A12F8ADB8814D50F8C75 /* TallyiOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TallyiOS/TallyiOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TallyiOS/TallyiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TallyiOS/TallyiOS.modulemap";
+				PRODUCT_MODULE_NAME = TallyiOS;
+				PRODUCT_NAME = TallyiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7AE51BEB9C186B9D51BB105C87F8F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD06ED0F182A12F8ADB8814D50F8C75 /* TallyiOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TallyiOS";
+				IBSC_MODULE = TallyiOS;
+				INFOPLIST_FILE = "Target Support Files/TallyiOS/ResourceBundle-TallyiOS-TallyiOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = TallyiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D62B2A5BDC5F666645BE209B8BBD6511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC279056B56D459823CAC2ACC70D5A0E /* Valet.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Valet/Valet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Valet/Valet.modulemap";
+				PRODUCT_MODULE_NAME = Valet;
+				PRODUCT_NAME = Valet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8C994439CA4CF27FC0151F903BDA4B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7601BA4FB35F6E084E26026DAAEDD230 /* TallyiOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TallyiOS/TallyiOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TallyiOS/TallyiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TallyiOS/TallyiOS.modulemap";
+				PRODUCT_MODULE_NAME = TallyiOS;
+				PRODUCT_NAME = TallyiOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40D9278A5FDBBDE8C234E0EBFE71EF8C /* Build configuration list for PBXNativeTarget "Valet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69F74C9D2D6E034492F18B6487C2D085 /* Debug */,
+				D62B2A5BDC5F666645BE209B8BBD6511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C307912DC69762AE13DDD058E2E291 /* Build configuration list for PBXNativeTarget "Pods-TallyiOS_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D53DDD40A910496913B9EE50DD2331 /* Debug */,
+				483805EE29B4B6A858C6B97F085E7471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56016721A0A7D973A36186DE84BC71F1 /* Build configuration list for PBXNativeTarget "Pods-TallyiOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E9C0E9126FC790EAA5B69A39060268D /* Debug */,
+				4A07D24F314C4FF3CA01A07122CF6F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF083EB1CDFCE81B692ADC77E82F4EC /* Build configuration list for PBXNativeTarget "TallyiOS-TallyiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A8795E5B8876976287652DB5346950 /* Debug */,
+				B7AE51BEB9C186B9D51BB105C87F8F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D85C048D8A2AE1603DC2963A926B6C5 /* Build configuration list for PBXNativeTarget "TallyiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C994439CA4CF27FC0151F903BDA4B4 /* Debug */,
+				AFF918F01490B4877F812394E2744A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

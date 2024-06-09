@@ -7,15 +7,46 @@
 
 import Foundation
 
+/// TallyConfig  the configuration required to access Tally SDK
+///
+/// - Parameters:
+///   - userId: A unique identifier for the customer, value should be unique.
+///   - userFullName: The customer full name.
+///   - userEmail: The customer email address
+///   - userPhone: The customer phone number
+///   - bankName: The name of your financial institution
+///   - staging: If the test is on staging environment
+///   - backgroundColor: the background color of your app.   The default is `white`
+///   - textColor: the text colors of your app. The default is `black`
+///   - titleFont: the fonts to use to diaplay titles. The default is `systemFont(ofSize: 18, weight: .bold)`
+///   - boldFont: the fonts to use to diaplay bold character. . The default is `systemFont(ofSize: 16, weight: .bold)`
+///   - mediumFont: the meidium fonts. The default is `.systemFont(ofSize: 14, weight: .medium)`
+///   - regularFont: the regular fonts. The default is `.systemFont(ofSize: 14, weight: .regular)`
+///   - accentColor: the accent color to use.. The default is `UIColor(red: 230/255, green: 90/255, blue: 40/255, alpha: 1.0)`
+///   - accentLabelColor: the color for displaying characters on an accent color. The default is `white`
+///   - token: The user token, default value is `nil`
+///
+
 public struct TallyConfig {
-    /// your tally key
-    var key: String
+    let  appCode = "Tally"
+    /// your user Id
+    var userId: String
+    /// your user full name
+    var userFullName: String
+    /// your user email
+    var userEmail: String
+    /// your user phone number
+    var userPhone: String
+    /// your bank name
+    var bankName: String
     /// the environment
     var staging: Bool
     /// the app background color
     var backgroundColor: UIColor
     /// the app text color
     var textColor: UIColor
+    /// the app text bold font
+    var titleFont: UIFont
     /// the app text bold font
     var boldFont: UIFont
     /// the app text semibold font
@@ -26,18 +57,74 @@ public struct TallyConfig {
     var regularFont: UIFont
     /// the app color for buttons and app bar
     var accentColor: UIColor
+    /// the app color for texts on the accent color
+    var accentLabelColor: UIColor
     
-    init(key: String, staging: Bool, backgroundColor: UIColor = .white, textColor: UIColor = .white, boldFont: UIFont = .systemFont(ofSize: 14, weight: .bold), semiBoldFont: UIFont = .systemFont(ofSize: 14, weight: .semibold), mediumFont: UIFont = .systemFont(ofSize: 14, weight: .medium), regularFont: UIFont = .systemFont(ofSize: 14, weight: .regular), accentColor: UIColor = .orange) {
+    /// your user token
+    var token: String?
+    
+   public init(userId: String, userFullName: String, userEmail: String, userPhone: String, bankName: String, staging: Bool, backgroundColor: UIColor = .white, textColor: UIColor = .black, titleFont: UIFont = .systemFont(ofSize: 18, weight: .bold), boldFont: UIFont = .systemFont(ofSize: 16, weight: .bold), semiBoldFont: UIFont = .systemFont(ofSize: 16, weight: .semibold), mediumFont: UIFont = .systemFont(ofSize: 14, weight: .medium), regularFont: UIFont = .systemFont(ofSize: 14, weight: .regular), accentColor: UIColor = UIColor(red: 230/255, green: 90/255, blue: 40/255, alpha: 1.0), accentLabelColor: UIColor = .white, token: String?) {
         self.backgroundColor = backgroundColor
         self.textColor = textColor
         self.staging = staging
         self.boldFont = boldFont
         self.accentColor = accentColor
-        self.key = key
+        self.userId = userId
         self.semiBoldFont = semiBoldFont
         self.mediumFont = mediumFont
         self.regularFont = regularFont
+        self.titleFont = titleFont
+        self.accentLabelColor = accentLabelColor
+       self.userEmail = userEmail
+       self.userFullName = userFullName
+       self.userPhone = userPhone
+       self.bankName = bankName
+       self.token = token
     }
+    
+    
+    /// The function for opening the SDK Page. This should be called from the viewcontroller where is to be presented from
+    /// Ensure to have added `NSPhotoLibraryAddUsageDescription` to your info.plist, else the SDK will crash.
+    /// - Parameters:
+    ///   - controller: The presenting controller..
+    
+    public func openTallySdk(controller: UIViewController){
+        let vc = TallySDKViewController.fromStoryboard()
+        vc.config = self
+        if self.bankName.isEmpty{
+            print("Bank Name is Empty")
+            return
+        }
+        if self.userFullName.isEmpty{
+            print("Full Name is Empty")
+            return
+        }
+        if self.userPhone.isEmpty{
+            print("Phone Number is Empty")
+            return
+        }
+        if self.userId.isEmpty{
+            print("User Id is Empty")
+            return
+        }
+        if !self.userEmail.isValidEmail{
+            print("Invalid email address")
+            return
+        }
+        vc.modalPresentationStyle = .fullScreen
+        controller.present(vc, animated: true)
+       // controller.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    public func retrieveData() -> EncryptedQrModelData? {
+        return UserStore.shared.readEncryptedModelForSdk()
+    }
+    
+    public func deleteAllData() throws {
+        return try UserStore.shared.clear()
+    }
+    
 }
 
 
