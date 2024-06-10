@@ -22,7 +22,7 @@ extension UIView {
     }
 }
 
-public protocol ReusableView: class {
+public protocol ReusableView: AnyObject {
     static var defaultReuseIdentifier: String { get }
 }
 
@@ -33,7 +33,7 @@ extension ReusableView where Self: UIView {
     }
 }
 
-public protocol NibLoadableView: class {
+public protocol NibLoadableView: AnyObject {
     static var nibName: String { get }
 }
 

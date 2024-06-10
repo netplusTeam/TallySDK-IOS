@@ -8,25 +8,25 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TallyiOS'
-  s.version          = '1.0.0'
+  s.version          = '1.0.2'
   s.summary          = 'A drop in library to accept payment with GetTally on iOS'
   s.description      = 'A drop in library to accept payment with GetTally on iOS. This is the easiest way to start collecting payments on your mobile apps.'
 
   s.homepage         = 'https://github.com/netplusTeam/TallySDK-IOS'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Promise Ochornma' => 'ochornmapromise@gmail.com' }
   s.source           = { :git => 'https://github.com/netplusTeam/TallySDK-IOS.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
 
   s.ios.deployment_target = '13.0'
   s.swift_versions = '5.0'
 
   s.source_files = 'TallyiOS/Classes/**/*'
   
-   s.resource_bundles = {
-     'TallyiOS' => ['TallyiOS/Assets/*.png', 'TallyiOS/Assets/**/*.{xcassets,json,imageset,png}' 'TallyiOS/Classes/**/*.{storyboard,xib}']
-   }
+   #s.resource_bundles = {
+   #  'TallyiOS' => ['TallyiOS/Assets/*.png', 'TallyiOS/Assets/**/*.{xcassets,json,imageset,png}' 'TallyiOS/Classes/**/*.{storyboard,xib}']
+  # }
    s.resources = "TallyiOS/Assets/*.{png,jpeg,jpg,storyboard,xib,xcassets,json}"
   # s.resources = {
    #  'TallyiOS' => ['TallyiOS/Assets/*.png', 'TallyiOS/Assets/**/*.{xcassets,json,imageset,png}' 'TallyiOS/Classes/**/*.{storyboard,xib}']

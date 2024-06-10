@@ -293,14 +293,14 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
             progressView.isHidden = webView.estimatedProgress == 1
             progressView.setProgress(Float(webView.estimatedProgress), animated: false)
             }
-            
+          /*
             if let key = change?[NSKeyValueChangeKey.newKey] {
        
                 let urlString = "\(key)"
                 if let url = URL(string: urlString){
                   
                 }
-            }
+            }*/
         }
     
     public func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
@@ -345,6 +345,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
                 case .message(let e):
                     message = e
                 }
+                print(message)
               /*  DispatchQueue.main.async {
                     self.oneButtonAlert(message: "Error in charging card", title: "Error")
                 }*/
@@ -381,9 +382,17 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
                 return
             }
             switch result {
-            case .success(_):
+            case .success(let response):
                 DispatchQueue.main.async {
-                    self.generateQRCode()
+                    if let code = response["code"] as? String{
+                        if code == "00"{
+                            self.generateQRCode()
+                        }else{
+                            self.hideProgress()
+                            self.oneButtonAlert(message: "Transaction Failed", title: "Error")
+                        }
+                    }
+                  
                 }
           
             case .failure(let failure):
@@ -401,7 +410,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
                     message = e
                 }
                 DispatchQueue.main.async {
-                    self.oneButtonAlert(message: "Error in validating OTP", title: "Error")
+                    self.oneButtonAlert(message: message, title: "Error")
                 }
             }
         })
@@ -430,6 +439,8 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
         showProgress(config: config, message: "Saving Card ....")
         NetworkHandler.shared.generateQRCode(payload: payload, config: config, completion: {[weak self] result in
             guard let self else{
+                self?.clearForm()
+                self?.hideProgress()
                 return
             }
             switch result {
@@ -457,7 +468,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
                     self.clearForm()
                     self.hideProgress()
                     self.clearForm()
-                    self.oneButtonAlert(message: "Error in generating QR Code", title: "Error")
+                    self.oneButtonAlert(message: message, title: "Error")
                 }
                
             }
@@ -507,7 +518,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
                     message = e
                 }
                 DispatchQueue.main.async {
-                    self.oneButtonAlert(message: "Error in checking out", title: "Error")
+                    self.oneButtonAlert(message: message, title: "Error")
                 }
            
                 
@@ -575,7 +586,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
                             message = e
                         }
                         DispatchQueue.main.async {[weak self] in
-                            self?.oneButtonAlert(message: "Error in validating card PIN", title: "Error")
+                            self?.oneButtonAlert(message: message, title: "Error")
                         }
                         
                     }
@@ -611,7 +622,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
                         message = e
                     }
                     DispatchQueue.main.async {[weak self] in
-                        self?.oneButtonAlert(message: "Error in creating a checkout", title: "Error")
+                        self?.oneButtonAlert(message: message, title: "Error")
                     }
                     
                 }
@@ -630,10 +641,8 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
                 return
             }
             self.dismissAllBottom()
-        }, cancel: {[weak self] _ in
-            guard let self else {
-                return
-            }
+        }, cancel: {_ in
+            
             
         })
     }
@@ -793,7 +802,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
         if message.name == "iosListener" {
           
            // fetchWebPaymentStatus()
-            let response = message.body
+           // let response = message.body
           
            
           /*  if let bodyDict = response as? [String : Any] {
@@ -944,11 +953,11 @@ extension TallySDKAddCardViewController: WKNavigationDelegate {
     }
     
     
-    private func handleRedirectURL(url: URL){
+   /* private func handleRedirectURL(url: URL){
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {[weak self] in
             
         }
            
       
-    }
+    }*/
 }

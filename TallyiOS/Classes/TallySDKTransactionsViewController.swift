@@ -40,7 +40,7 @@ class TallySDKTransactionsViewController: UIViewController, StoryboardLoadable, 
             hideProgress()
             return
         }
-        var qrCodes = storedData.data.filter({e in
+        let qrCodes = storedData.data.filter({e in
             return e.qrcodeId != nil
         })
         if (qrCodes.isEmpty){
@@ -85,7 +85,7 @@ class TallySDKTransactionsViewController: UIViewController, StoryboardLoadable, 
                 DispatchQueue.main.async {[weak self] in
                     self?.tableView.isHidden = true
                     self?.emptyView.isHidden = false
-                    self?.oneButtonAlert(message: "Error in fetching transactions", title: "Error")
+                    self?.oneButtonAlert(message: message, title: "Error")
                 }
             }
         })

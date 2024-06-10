@@ -89,7 +89,7 @@ class MerchantsViewController: UIViewController, StoryboardLoadable, ProgressDis
                 DispatchQueue.main.async {[weak self] in
                     self?.tableView.isHidden = true
                     self?.emptyView.isHidden = false
-                    self?.oneButtonAlert(message: "Error in fetching transactions", title: "Error")
+                    self?.oneButtonAlert(message: message, title: "Error")
                 }
             }
         })

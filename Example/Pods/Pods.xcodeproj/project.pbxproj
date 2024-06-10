@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001E99651C91C9C4AF9EDF5BD3C139AD /* webview.html in Sources */ = {isa = PBXBuildFile; fileRef = E260EC1D103B3A60C0BD93DA703F9D65 /* webview.html */; };
 		0723A0014D91C1BB56380CA4458251FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB00EB92B598E3B3BF1EF709037048 /* Foundation.framework */; };
 		08EDD0B7A1FBBE1BCE2590474BC346C6 /* TransactionItemTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6465561EE8BF5E5BC674AC760BAB90B1 /* TransactionItemTableViewCell.xib */; };
 		0A9B48BCE6A02DA96A81366B69D0F26F /* TallySDKAddCardViewController.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 9A685DD25FF1FA742878F5279357D3B0 /* TallySDKAddCardViewController.storyboard */; };
@@ -124,7 +123,7 @@
 		0D78653FA748030FF76F300BF7D32B35 /* Pods-TallyiOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TallyiOS_Example.modulemap"; sourceTree = "<group>"; };
 		109FC40F19786B60B6E9DDE1F8F52897 /* TokenizedItemTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TokenizedItemTableViewCell.xib; sourceTree = "<group>"; };
 		15C0C99813E1473B73BD83921329EB38 /* TallySDKViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = TallySDKViewController.storyboard; path = TallyiOS/Classes/TallySDKViewController.storyboard; sourceTree = "<group>"; };
-		16AF605E599C089381C1E3C402798E20 /* Pods-TallyiOS_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TallyiOS_Example"; path = Pods_TallyiOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16AF605E599C089381C1E3C402798E20 /* Pods_TallyiOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TallyiOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B8EFA930755B75245647E7123B3AC8 /* Pods-TallyiOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TallyiOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		1CA32A8F56FDC2FBED9A744543F3BE10 /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Sources/Valet/Valet.h; sourceTree = "<group>"; };
 		1D415EB5B0958D5D35B1C638C54706F1 /* TallyiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TallyiOS-Info.plist"; sourceTree = "<group>"; };
@@ -150,7 +149,7 @@
 		7601BA4FB35F6E084E26026DAAEDD230 /* TallyiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TallyiOS.debug.xcconfig; sourceTree = "<group>"; };
 		76265FD713F244D36A0D3FE8C19F2ABE /* TallyiOS-TallyiOS */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "TallyiOS-TallyiOS"; path = TallyiOS.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7989920C41D3DA63B90F9E7D43C2F475 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		7A15C7634F733354471C57D400C1A9C3 /* Pods-TallyiOS_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TallyiOS_Tests"; path = Pods_TallyiOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A15C7634F733354471C57D400C1A9C3 /* Pods_TallyiOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TallyiOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7B51F48D43FF74FFF7509A14184CE2 /* Pods-TallyiOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TallyiOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7D01CD28AA0FA85387117F1AA7F02366 /* TallySDKTransactionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TallySDKTransactionsViewController.swift; path = TallyiOS/Classes/TallySDKTransactionsViewController.swift; sourceTree = "<group>"; };
 		7F14F0F7E3E8B2B92EECD285AEF06B65 /* SecureEnclave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclave.swift; path = Sources/Valet/SecureEnclave.swift; sourceTree = "<group>"; };
@@ -172,7 +171,7 @@
 		A4339B7E06E369849201309FE1FA4A2D /* Pods-TallyiOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TallyiOS_Example-Info.plist"; sourceTree = "<group>"; };
 		A93D71CA984AFEE37A377C44CD85D49A /* TallyiOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TallyiOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ABFAC4A027C0F9DDD945C99861225EAE /* TallySDKRecentTokenizedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TallySDKRecentTokenizedViewController.swift; path = TallyiOS/Classes/TallySDKRecentTokenizedViewController.swift; sourceTree = "<group>"; };
-		B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Valet; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B677933C2C03E21100E73A52 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		B67D99B02C039FF10001B734 /* UpdatedTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedTransactionResponse.swift; sourceTree = "<group>"; };
 		B68F01FA2C04768D00645CF1 /* AcardTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AcardTransactionViewController.swift; path = TallyiOS/Classes/AcardTransactionViewController.swift; sourceTree = "<group>"; };
@@ -199,7 +198,6 @@
 		D699044B4EA887E44D06027618E3F27C /* StoryboardLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardLoadable.swift; path = TallyiOS/Classes/StoryboardLoadable.swift; sourceTree = "<group>"; };
 		D76C7F362F83625B4523DE840FBB58D3 /* CheckOutResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CheckOutResponse.swift; sourceTree = "<group>"; };
 		DBA52DCF1221C79163DDE8030A4C4009 /* Pods-TallyiOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TallyiOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E260EC1D103B3A60C0BD93DA703F9D65 /* webview.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; path = webview.html; sourceTree = "<group>"; };
 		E5CF02C763D084156BFD45E05F820CBD /* Valet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.debug.xcconfig; sourceTree = "<group>"; };
 		EAFFDDA501DD91DC6D916A825E3BB389 /* KeychainError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainError.swift; path = Sources/Valet/KeychainError.swift; sourceTree = "<group>"; };
 		EB480E7BC1AAD329A2ECFD416148356D /* TallySDKRecentTokenizedViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = TallySDKRecentTokenizedViewController.storyboard; path = TallyiOS/Classes/TallySDKRecentTokenizedViewController.storyboard; sourceTree = "<group>"; };
@@ -305,7 +303,6 @@
 			isa = PBXGroup;
 			children = (
 				C16B7535E2B69D149C1A6EC67173D0DB /* NetworkHandler.swift */,
-				E260EC1D103B3A60C0BD93DA703F9D65 /* webview.html */,
 				523E2CED5AC82386192E8A7CD0A35284 /* Model */,
 			);
 			name = Network;
@@ -363,11 +360,11 @@
 		7D01CE20B827CAC546C319D3D0E415CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16AF605E599C089381C1E3C402798E20 /* Pods-TallyiOS_Example */,
-				7A15C7634F733354471C57D400C1A9C3 /* Pods-TallyiOS_Tests */,
+				16AF605E599C089381C1E3C402798E20 /* Pods_TallyiOS_Example.framework */,
+				7A15C7634F733354471C57D400C1A9C3 /* Pods_TallyiOS_Tests.framework */,
 				4EBFBB249A2DB1B0EE70A9950C60220E /* TallyiOS */,
 				76265FD713F244D36A0D3FE8C19F2ABE /* TallyiOS-TallyiOS */,
-				B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet */,
+				B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -600,7 +597,7 @@
 			);
 			name = "Pods-TallyiOS_Tests";
 			productName = Pods_TallyiOS_Tests;
-			productReference = 7A15C7634F733354471C57D400C1A9C3 /* Pods-TallyiOS_Tests */;
+			productReference = 7A15C7634F733354471C57D400C1A9C3 /* Pods_TallyiOS_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CF655A0C50017F38EE7D9B1E9D0417F4 /* Pods-TallyiOS_Example */ = {
@@ -620,7 +617,7 @@
 			);
 			name = "Pods-TallyiOS_Example";
 			productName = Pods_TallyiOS_Example;
-			productReference = 16AF605E599C089381C1E3C402798E20 /* Pods-TallyiOS_Example */;
+			productReference = 16AF605E599C089381C1E3C402798E20 /* Pods_TallyiOS_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E3D29E214E770F28213292B63B7A05DA /* Valet */ = {
@@ -638,7 +635,7 @@
 			);
 			name = Valet;
 			productName = Valet;
-			productReference = B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet */;
+			productReference = B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -798,7 +795,6 @@
 				A0094A2EAD676783C49E6C9B63AD8673 /* Util.swift in Sources */,
 				B6B617BC2C1152E200FD4116 /* MerchantsViewController.swift in Sources */,
 				4A277849F8FF76B8C8A43C106ABF0005 /* View+Extension.swift in Sources */,
-				001E99651C91C9C4AF9EDF5BD3C139AD /* webview.html in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,7 +850,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TallyiOS_Example/Pods-TallyiOS_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TallyiOS_Example/Pods-TallyiOS_Example.modulemap";
@@ -887,7 +883,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TallyiOS_Tests/Pods-TallyiOS_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TallyiOS_Tests/Pods-TallyiOS_Tests.modulemap";
@@ -920,7 +916,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TallyiOS_Tests/Pods-TallyiOS_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TallyiOS_Tests/Pods-TallyiOS_Tests.modulemap";
@@ -954,7 +950,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TallyiOS_Example/Pods-TallyiOS_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TallyiOS_Example/Pods-TallyiOS_Example.modulemap";
@@ -987,7 +983,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Valet/Valet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Valet/Valet.modulemap";
 				PRODUCT_MODULE_NAME = Valet;
@@ -1210,7 +1206,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Valet/Valet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Valet/Valet.modulemap";
 				PRODUCT_MODULE_NAME = Valet;
