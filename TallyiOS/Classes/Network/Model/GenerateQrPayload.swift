@@ -45,7 +45,7 @@ public struct GenerateQrcodeResponse: Codable {
 
 
 public struct EncryptedQrModelData: Codable{
-    let data: [EncryptedQrModel]
+    public let data: [EncryptedQrModel]
     
     enum CodingKeys: String, CodingKey {
         case data
@@ -70,7 +70,7 @@ public struct EncryptedQrModel: Codable{
     }
 }
 
-public struct QrcodeIds: Codable {
+ struct QrcodeIds: Codable {
     let qr_code_ids : [String]
     
     enum CodingKeys: String, CodingKey {

@@ -9,7 +9,7 @@ import Foundation
 
 
 
-public struct CheckOutResponse: Codable {
+ struct CheckOutResponse: Codable {
     let amount, customerId, domain, merchantId, status, transId : String
     
     enum CodingKeys: String, CodingKey {
@@ -23,7 +23,7 @@ public struct CheckOutResponse: Codable {
 }
 
 
-public struct PayPayload: Codable {
+ struct PayPayload: Codable {
     let clientData, type : String
     
     enum CodingKeys: String, CodingKey {
@@ -32,7 +32,7 @@ public struct PayPayload: Codable {
     }
 }
 
-public struct PayResponse: Codable {
+ struct PayResponse: Codable {
     let ACSUrl, MD, PaReq, TermUrl, amount, code, eciFlag, orderId, provider, redirectHtml, result, status, transId : String
     
     enum CodingKeys: String, CodingKey {
@@ -52,7 +52,7 @@ public struct PayResponse: Codable {
     }
 }
 
-public struct WebResponse: Codable {
+ struct WebResponse: Codable {
     let currency_code, customerName, email, message, amount, code, narration, orderId, result, status, transId : String
     
     enum CodingKeys: String, CodingKey {
@@ -70,7 +70,7 @@ public struct WebResponse: Codable {
     }
 }
 
-public struct VerveOtpPayload: Codable {
+ struct VerveOtpPayload: Codable {
     let OTPData : String
     var type = "OTP"
 

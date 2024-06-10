@@ -123,7 +123,7 @@ public struct TallyConfig {
 
 public class TallDataUtil{
     
-    static let shared = TallDataUtil()
+    public static let shared = TallDataUtil()
     
     public func retrieveData() -> EncryptedQrModelData? {
         return UserStore.shared.readEncryptedModelForSdk()

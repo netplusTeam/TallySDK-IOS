@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct UpdatedTransactionResponse: Codable {
+ struct UpdatedTransactionResponse: Codable {
     let data: UpdatedTransactionResponseData
     let message: String
     let status: String
@@ -20,7 +20,7 @@ public struct UpdatedTransactionResponse: Codable {
     }
 }
 
-public struct UpdatedTransactionResponseData: Codable {
+ struct UpdatedTransactionResponseData: Codable {
     let count: Int
     let rows: [UpdatedTransactionResponseRow]
     
@@ -30,7 +30,7 @@ public struct UpdatedTransactionResponseData: Codable {
     }
 }
 
-public struct UpdatedTransactionResponseRow: Codable {
+ struct UpdatedTransactionResponseRow: Codable {
     let amount: Double
     let merchantName, responseMessage, dateCreated, rrn, agentName, localDate : String?
     let localTime_, maskedPan, merchantId, otherId, partnerId, provider, remark : String?
