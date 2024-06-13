@@ -113,102 +113,105 @@ Then call the TallyiOS SDK
 
 
 
+@UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
-     // Define the channel identifier
+    
+    // Define the channel identifier
     private let CHANNEL = "com.fundall.gettallysdkui"
-  // Define the methods  identifier
+    // Define the methods identifier
     private let deleteMethod = "deleteMethod"
     private let fetchMethod = "fetchMethod"
     private let startTallyActivity = "startTallyActivity"
-
-
-
-
+    
     override func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        GeneratedPluginRegistrant.register(with: self)
         // Set up the MethodChannel with the same name as defined in Dart
         if let flutterViewController = window?.rootViewController as? FlutterViewController {
             let methodChannel = FlutterMethodChannel(name: CHANNEL, binaryMessenger: flutterViewController.binaryMessenger)
             methodChannel.setMethodCallHandler { [weak self] (call: FlutterMethodCall, result: FlutterResult) in
-                if call.method == fetchMethod {
+                if call.method == self?.fetchMethod {
                     // Perform platform-specific operations and obtain the result
                     let data = self?.getDataFromTally()
-
+                    
                     // Send the result back to Flutter
                     result(data)
-                } else if call.method == deleteMethod {
-                   self?.deleteDataFromTally(result: result)
-                } else if call.method == startTallyActivity {
-                   self?.deleteDataFromTally(result: result)
+                } else if call.method == self?.deleteMethod {
+                    self?.deleteDataFromTally(result: result)
+                } else if call.method == self?.startTallyActivity {
+                    self?.startSDK(call: call, result: result)
                 }else{
-                   result(FlutterMethodNotImplemented)
-               }
+                    result(FlutterMethodNotImplemented)
+                }
             }
+            
+            ///If you prefer event listener you can also retrieve QR codes using event listeners
+            //// Uncomment the code below to use eventChannel
+         /*   let eventChannel = FlutterEventChannel(name: "com.netplus.qrengine.tallysdk/tokenizedCardsData", binaryMessenger: flutterViewController.binaryMessenger)
+                     eventChannel.setStreamHandler(object : StreamHandler {
+                      override func onListen(arguments: Any?, eventSink: EventSink) {
+                       let data = self.getDataFromTally()
+                        eventSink(data)
+                     }
 
-          ///If you prefer event listener you can also retrieve QR codes using event listeners
-
-          let eventChannel = FlutterEventChannel(name: "com.netplus.qrengine.tallysdk/tokenizedCardsData", binaryMessenger: flutterViewController.binaryMessenger)
-          eventChannel.setStreamHandler(object : StreamHandler {
-           override fun onListen(arguments: Any?, eventSink: EventSink) {
-            let data = self.getDataFromTally()
-             eventSink(data)
-          }
-
-         override fun onCancel(arguments: Any?) {
-            eventSink = nil
-          }
-        })
-           
+                    override func onCancel(arguments: Any?) {
+                       eventSink = nil
+                     }
+                   })
+            
+            */
+            
+        }
         
-
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
-
-    private func getDataFromTally() -> EncryptedQrModelData? {
+    
+    func getDataFromTally() -> EncryptedQrModelData? {
         return TallDataUtil.shared.retrieveData()
     }
-
-    private func deleteDataFromTally(result: @escaping FlutterResult) {
-      do {
-           try TallDataUtil.shared.deleteAllData()
-               result("Success")
+    
+    func deleteDataFromTally(result:  FlutterResult) {
+        do {
+            try TallDataUtil.shared.deleteAllData()
+            result("Success")
         }catch let error {
             result(FlutterError(code: "Delete Failed", message: error.localizedDescription, details: nil))
         }
     }
-      private func startSDK(call: FlutterMethodCall, result: @escaping FlutterResult) {
-       if let data = call.arguments as? [String: Any]{
+    func startSDK(call: FlutterMethodCall, result:  FlutterResult) {
+        if let data = call.arguments as? [String: Any]{
             guard let email = data["email"] as? String else {
                 result(FlutterError(code: "INVALID_ARGUMENTS", message: "Enter email", details: nil))
                 return
             }
-             guard let bankName = data["bankName"] as? String else {
+            guard let bankName = data["bankName"] as? String else {
                 result(FlutterError(code: "INVALID_ARGUMENTS", message: "Enter bankName", details: nil))
                 return
             }
-             guard let fullName = data["fullName"] as? String else {
+            guard let fullName = data["fullName"] as? String else {
                 result(FlutterError(code: "INVALID_ARGUMENTS", message: "Enter fullName", details: nil))
                 return
             }
-             guard let phoneNumber = data["phoneNumber"] as? String else {
+            guard let phoneNumber = data["phoneNumber"] as? String else {
                 result(FlutterError(code: "INVALID_ARGUMENTS", message: "Enter phoneNumber", details: nil))
                 return
             }
-              guard let userId = data["userId"] as? String else {
+            guard let userId = data["userId"] as? String else {
                 result(FlutterError(code: "INVALID_ARGUMENTS", message: "Enter userId", details: nil))
                 return
             }
             let config = TallyConfig(userId: userId, userFullName: fullName, userEmail: email, userPhone: phoneNumber, bankName: bankName, staging: false, token: nil)
             guard let controller = UIApplication.shared.windows.first?.rootViewController else{
-            return
-           }
-           config.openTallySdk(controller: controller)
+                return
+            }
+            config.openTallySdk(controller: controller)
         }else{
             result(FlutterError(code: "INVALID_ARGUMENTS", message: "Can't open SDK", details: nil))
         }
-     }
+    }
+    
 }
 ```
 You can convert the response `getDataFromTally` to a JSON/Map<String, dynamic> for uniformity on both Android and iOS
