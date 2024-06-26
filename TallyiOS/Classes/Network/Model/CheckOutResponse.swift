@@ -8,11 +8,11 @@
 import Foundation
 
 struct ValidateKeyResponse: Codable {
-   let merchantId, token : String
+   let mid, token : String
    
    enum CodingKeys: String, CodingKey {
        case token
-       case merchantId
+       case mid
    }
 }
 

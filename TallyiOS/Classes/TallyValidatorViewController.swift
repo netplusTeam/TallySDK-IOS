@@ -35,7 +35,7 @@ class TallyValidatorViewController: UIViewController, ProgressDisplayableControl
             switch result {
             case .success(let data):
                 DispatchQueue.main.async {
-                    let config = self.param.tallyConfig(token: data.token, merchantId: data.merchantId)
+                    let config = self.param.tallyConfig(token: data.token, merchantId: data.mid)
                     config.openTallyController(controller: self)
                 }
             case .failure(let failure):

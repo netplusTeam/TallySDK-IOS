@@ -493,7 +493,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
     private func cardCheckOut(){
         showProgress(config: config, message: "Tokenizing card...")
       
-        NetworkHandler.shared.cardCheckOut(name: config.userFullName, email: config.userEmail, amount: config.staging ? 10.0 : 100.0, orderId: orderId(), config: config, completion: {[weak self] result in
+        NetworkHandler.shared.cardCheckOut(name: config.userFullName, email: config.userEmail, amount: config.staging ? 100.0 : 100.0, orderId: orderId(), config: config, completion: {[weak self] result in
             guard let self else{
                 self?.oneButtonAlert(message: "", title: "unknown error")
                 return

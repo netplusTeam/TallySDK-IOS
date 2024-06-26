@@ -40,6 +40,7 @@ class TallySDKViewController: UIViewController, StoryboardLoadable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         setSelected(label: cardLabel, underLine: cardUnderlineView)
         setUnSelected(labels: [transactionLabel, tokenCardLabel, merchantLabel], underLines: [transactionUnderlineView, tokenCardUnderlineView, merchantUnderlineView])
         
@@ -85,7 +86,9 @@ class TallySDKViewController: UIViewController, StoryboardLoadable {
     }
     
     @IBAction func goBackHome(){
-        self.goBackToApp?()
+        print("we dismiss")
+        goBackToApp?()
+      //  self.dismiss(animated: true)
     }
     
     private var recentCardController: UIViewController {

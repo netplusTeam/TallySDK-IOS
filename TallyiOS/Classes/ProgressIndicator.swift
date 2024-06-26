@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-public protocol ProgressDisplayableControllerProtocol {
+ protocol ProgressDisplayableControllerProtocol {
     var progressIndicatorView: ProgressIndicatorView { get set }
     
     func showProgress(_ indicatorColor: UIColor, config: TallyConfig, message: String)
     func hideProgress()
 }
 
-public extension ProgressDisplayableControllerProtocol where Self: UIViewController {
+ extension ProgressDisplayableControllerProtocol where Self: UIViewController {
     func showProgress(_ indicatorColor: UIColor = .orange, config: TallyConfig, message: String) {
         self.progressIndicatorView.showOnController(self, config: config, message: message)
     }
@@ -25,7 +25,7 @@ public extension ProgressDisplayableControllerProtocol where Self: UIViewControl
     }
 }
 
-public class ProgressIndicatorView {
+ class ProgressIndicatorView {
     private let backgroundView = UIView()
     private var cardView : UIView = {
         let v = UIView()

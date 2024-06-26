@@ -192,8 +192,7 @@ public struct TallyParam {
     public func openTallyController(controller: UIViewController){
         let vc = TallySDKViewController.fromStoryboard()
         vc.goBackToApp = {
-            controller.dismiss(animated: true)
-        }
+            controller.presentingViewController?.dismiss(animated: true, completion: nil)        }
         vc.config = self
         if self.bankName.isEmpty{
             print("Bank Name is Empty")
@@ -215,9 +214,9 @@ public struct TallyParam {
             print("Invalid email address")
             return
         }
+       
         vc.modalPresentationStyle = .fullScreen
         controller.present(vc, animated: true)
-       // controller.navigationController?.pushViewController(vc, animated: true)
         
     }
     

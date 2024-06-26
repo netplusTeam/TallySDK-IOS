@@ -11,29 +11,29 @@ import Foundation
 import UIKit
 
 extension UIView {
-    public class func fromNib<T: UIView>() -> T {
+     class func fromNib<T: UIView>() -> T {
         return Bundle(for: T.self).loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
     }
     
-    public func addViews(_ subviews: [UIView]) {
+     func addViews(_ subviews: [UIView]) {
         for view in subviews {
             self.addSubview(view)
         }
     }
 }
 
-public protocol ReusableView: AnyObject {
+ protocol ReusableView: AnyObject {
     static var defaultReuseIdentifier: String { get }
 }
 
 extension ReusableView where Self: UIView {
     
-    public static var defaultReuseIdentifier: String {
+     static var defaultReuseIdentifier: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
     }
 }
 
-public protocol NibLoadableView: AnyObject {
+ protocol NibLoadableView: AnyObject {
     static var nibName: String { get }
 }
 
@@ -43,12 +43,12 @@ extension NibLoadableView where Self: UIView {
         return Bundle.init(for: Self.self).loadNibNamed(nibName, owner: nil, options: nil)!.first as! Self
     }
     
-    public static var nibName: String {
+     static var nibName: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
     }
 }
 
-public extension UITableView {
+ extension UITableView {
     
     func register<T: UITableViewCell>(_: T.Type) where T: ReusableView {
         register(T.self, forCellReuseIdentifier: T.defaultReuseIdentifier)
