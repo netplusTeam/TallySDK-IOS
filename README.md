@@ -55,8 +55,8 @@ Integrating Tally SDK into your app's functionality is straightforward. For exam
 
 ```swift
  @IBAction func openTallySDK(){
-        let config = TallyConfig(userId: "userId", userFullName: "First Name and Last Name", userEmail: "userEmail@email.com", userPhone: "080********", bankName: "bankName", staging: true, token: nil)
-        config.openTallySdk(controller: self)
+    let param = TallyParam(userId: "userId", userFullName: "userFullName", userEmail: "userEmail@gmail.com", userPhone: "userPhone", bankName: "bankName", staging: true, apiKey: "apiKey", activationKey: "activationKey")
+    param.openTallySdk(controller: self)
     }
 ```
 Replace the parameters with the necessary credentials. This action opens the Tally SDK UI, ready for user interaction.
@@ -202,11 +202,19 @@ Then call the TallyiOS SDK
                 result(FlutterError(code: "INVALID_ARGUMENTS", message: "Enter userId", details: nil))
                 return
             }
-            let config = TallyConfig(userId: userId, userFullName: fullName, userEmail: email, userPhone: phoneNumber, bankName: bankName, staging: false, token: nil)
+            guard let apiKey = data["apiKey"] as? String else {
+                result(FlutterError(code: "INVALID_ARGUMENTS", message: "Enter apiKey", details: nil))
+                return
+            }
+            guard let activationKey = data["activationKey"] as? String else {
+                result(FlutterError(code: "INVALID_ARGUMENTS", message: "Enter activationKey", details: nil))
+                return
+            }
+            let param = TallyParam(userId: "userId", userFullName: "userFullName", userEmail: "userEmail@gmail.com", userPhone: "userPhone", bankName: "bankName", staging: true, apiKey: "apiKey", activationKey: "activationKey")
             guard let controller = UIApplication.shared.windows.first?.rootViewController else{
                 return
             }
-            config.openTallySdk(controller: controller)
+            param.openTallySdk(controller: controller)
         }else{
             result(FlutterError(code: "INVALID_ARGUMENTS", message: "Can't open SDK", details: nil))
         }
@@ -300,6 +308,8 @@ class SDKTriggerButton extends StatelessWidget {
         "bankName": "GTBank",
         "phoneNumber": "000000000",
         "userId": "00",
+        "activationKey": "activationKey",
+        "apiKey": "apiKey"
       });
       print(result); // Print success result from native code
     } on PlatformException catch (e) {
