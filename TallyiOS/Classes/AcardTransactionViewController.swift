@@ -38,7 +38,7 @@ class AcardTransactionViewController: UIViewController, StoryboardLoadable, Prog
     
     private func fetData(){
         showProgress(config: config, message: "Fetching Transactions....")
-        NetworkHandler.shared.getTransactions(payload: .init(qr_code_ids: [qrCode]), completion: {[weak self] result in
+        NetworkHandler.shared.getTransactions(payload: .init(qr_code_ids: [qrCode]), config: config, completion: {[weak self] result in
             guard let self else { return  }
             switch result {
             case .success(let resp):

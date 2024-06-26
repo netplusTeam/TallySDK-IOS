@@ -12,6 +12,8 @@ class TallySDKViewController: UIViewController, StoryboardLoadable {
     var config: TallyConfig!
     var encryptedModel: EncryptedQrModel?
     
+    var goBackToApp: (() -> ())?
+    
     @IBOutlet private weak var appBarView: UIView!
     
     @IBOutlet private weak var backButton: UIButton!
@@ -83,7 +85,7 @@ class TallySDKViewController: UIViewController, StoryboardLoadable {
     }
     
     @IBAction func goBackHome(){
-        self.dismiss(animated: true)
+        self.goBackToApp?()
     }
     
     private var recentCardController: UIViewController {

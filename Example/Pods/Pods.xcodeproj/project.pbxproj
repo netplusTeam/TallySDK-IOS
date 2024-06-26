@@ -47,6 +47,7 @@
 		AF0BF674950B21D8959F441E16A5F42A /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C47AA29A35E35EB9276B4EE6896D13 /* ProgressIndicator.swift */; };
 		B677933D2C03E21100E73A52 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677933C2C03E21100E73A52 /* TokenManager.swift */; };
 		B67D99B12C039FF10001B734 /* UpdatedTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67D99B02C039FF10001B734 /* UpdatedTransactionResponse.swift */; };
+		B6804D522C2B4467009EB3BA /* TallyValidatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6804D512C2B4467009EB3BA /* TallyValidatorViewController.swift */; };
 		B68F01FB2C04768D00645CF1 /* AcardTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F01FA2C04768D00645CF1 /* AcardTransactionViewController.swift */; };
 		B68F02022C047C5C00645CF1 /* AcardTransactionViewController.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = B68F02002C047BD800645CF1 /* AcardTransactionViewController.storyboard */; };
 		B6B617BC2C1152E200FD4116 /* MerchantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B617BB2C1152E200FD4116 /* MerchantsViewController.swift */; };
@@ -174,6 +175,7 @@
 		B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B677933C2C03E21100E73A52 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		B67D99B02C039FF10001B734 /* UpdatedTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedTransactionResponse.swift; sourceTree = "<group>"; };
+		B6804D512C2B4467009EB3BA /* TallyValidatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TallyValidatorViewController.swift; path = TallyiOS/Classes/TallyValidatorViewController.swift; sourceTree = "<group>"; };
 		B68F01FA2C04768D00645CF1 /* AcardTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AcardTransactionViewController.swift; path = TallyiOS/Classes/AcardTransactionViewController.swift; sourceTree = "<group>"; };
 		B68F02002C047BD800645CF1 /* AcardTransactionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AcardTransactionViewController.storyboard; path = TallyiOS/Classes/AcardTransactionViewController.storyboard; sourceTree = "<group>"; };
 		B6AD23AFEBD9978AB4B66E8C55907F28 /* Pods-TallyiOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TallyiOS_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -451,6 +453,7 @@
 				B68F02002C047BD800645CF1 /* AcardTransactionViewController.storyboard */,
 				B6B617BB2C1152E200FD4116 /* MerchantsViewController.swift */,
 				B6E750E62C13BEDA00F06C64 /* MerchantsViewController.storyboard */,
+				B6804D512C2B4467009EB3BA /* TallyValidatorViewController.swift */,
 			);
 			name = TallyiOS;
 			path = ../..;
@@ -776,6 +779,7 @@
 				8533868C3B0FE95925663B269F2CED42 /* TallyiOS-dummy.m in Sources */,
 				0A9B48BCE6A02DA96A81366B69D0F26F /* TallySDKAddCardViewController.storyboard in Sources */,
 				8521CA715BE2956E2823DF86EEDB222F /* TallySDKAddCardViewController.swift in Sources */,
+				B6804D522C2B4467009EB3BA /* TallyValidatorViewController.swift in Sources */,
 				785F8DC6209430271B9329FA4705261F /* TallySDKRecentTokenizedViewController.storyboard in Sources */,
 				9133E1416A5ABB007B45391439D2FF1E /* TallySDKRecentTokenizedViewController.swift in Sources */,
 				B677933D2C03E21100E73A52 /* TokenManager.swift in Sources */,

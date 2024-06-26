@@ -7,6 +7,22 @@
 
 import Foundation
 
+struct ValidateKeyResponse: Codable {
+   let merchantId, token : String
+   
+   enum CodingKeys: String, CodingKey {
+       case token
+       case merchantId
+   }
+}
+
+struct ValidateKeyRequest: Codable {
+   let activationKey : String
+   
+   enum CodingKeys: String, CodingKey {
+       case activationKey = "activation_key"
+   }
+}
 
 
  struct CheckOutResponse: Codable {

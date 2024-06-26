@@ -312,7 +312,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
     
     private func fetchWebPaymentStatus(){
         let fetchResponseUrl = "https://paytally.netpluspay.com/transactions/requery/MID63dbdc67badab/\(transactionId)"
-        NetworkHandler.shared.fetchWebPaymentStatus(url: fetchResponseUrl, completion: {[weak self] result in
+        NetworkHandler.shared.fetchWebPaymentStatus(url: fetchResponseUrl, config: config, completion: {[weak self] result in
             guard let self else {
                 return
             }
@@ -377,7 +377,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
             return
         }
         showProgress(config: config, message: "Processing..")
-        NetworkHandler.shared.sendVerveOTP(payload: .init(OTPData: cardOTP, type: "OTP"), result: result, provider: provider, transId: transactionId, completion: {[weak self] result in
+        NetworkHandler.shared.sendVerveOTP(payload: .init(OTPData: cardOTP, type: "OTP"), config: config, result: result, provider: provider, transId: transactionId, completion: {[weak self] result in
             guard let self else{
                 return
             }
@@ -493,7 +493,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
     private func cardCheckOut(){
         showProgress(config: config, message: "Tokenizing card...")
       
-        NetworkHandler.shared.cardCheckOut(name: config.userFullName, email: config.userEmail, amount: config.staging ? 10.0 : 100.0, orderId: orderId(), completion: {[weak self] result in
+        NetworkHandler.shared.cardCheckOut(name: config.userFullName, email: config.userEmail, amount: config.staging ? 10.0 : 100.0, orderId: orderId(), config: config, completion: {[weak self] result in
             guard let self else{
                 self?.oneButtonAlert(message: "", title: "unknown error")
                 return
@@ -541,7 +541,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
         let payPayload = PayPayload(clientData: base64String, type: "PAY")
         if let cardPIN{
             if !cardPIN.isEmpty{
-                NetworkHandler.shared.makeVerveCardPayment(payload: payPayload, completion: {[weak self] result in
+                NetworkHandler.shared.makeVerveCardPayment(payload: payPayload, config: config, completion: {[weak self] result in
                     guard let self else{
                         self?.oneButtonAlert(message: "", title: "unknown error")
                         return
@@ -595,7 +595,7 @@ class TallySDKAddCardViewController: UIViewController, StoryboardLoadable, Progr
             }
         }else{
             
-            NetworkHandler.shared.makeCardPayment(payload: payPayload, completion: {[weak self] result in
+            NetworkHandler.shared.makeCardPayment(payload: payPayload, config: config, completion: {[weak self] result in
                 guard let self else{
                     self?.oneButtonAlert(message: "", title: "unknown error")
                     return

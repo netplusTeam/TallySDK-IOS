@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openFromExample(){
-        let config = TallyConfig(userId: "1218", userFullName: "Promise Ochornma", userEmail: "ochornmapromise@gmail.com", userPhone: "08033214929", bankName: "First Bank", staging: true, token: nil)
-        config.openTallySdk(controller: self)
+        let param = TallyParam(userId: "userId", userFullName: "userFullName", userEmail: "userEmail@gmail.com", userPhone: "userPhone", bankName: "bankName", staging: true, apiKey: "apiKey", activationKey: "activationKey")
+        param.openTallySdk(controller: self)
     }
 
 }

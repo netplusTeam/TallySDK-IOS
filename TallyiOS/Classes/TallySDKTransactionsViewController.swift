@@ -51,7 +51,7 @@ class TallySDKTransactionsViewController: UIViewController, StoryboardLoadable, 
         let mappedCodes = qrCodes.map({ e in
             return e.qrcodeId!
         })
-        NetworkHandler.shared.getTransactions(payload: .init(qr_code_ids: mappedCodes), completion: {[weak self] result in
+        NetworkHandler.shared.getTransactions(payload: .init(qr_code_ids: mappedCodes), config: config, completion: {[weak self] result in
             guard let self else { return  }
             switch result {
             case .success(let resp):
