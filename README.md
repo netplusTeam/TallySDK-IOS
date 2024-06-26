@@ -226,7 +226,7 @@ private func getDataFromTally() -> [String: Any]? {
    let encoder = JSONEncoder()
 do {
   let data = try encoder.encode(savedData)
- let formattedResponse = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
+ let formattedResponse = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
   return formattedResponse
   }catch {
     return nil
